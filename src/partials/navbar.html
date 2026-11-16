@@ -1,0 +1,87 @@
+{% load static %}
+<!-- NyxOps Shared Navbar Partial -->
+<nav class="bg-Main-Wh rounded-[5px] px-5 py-3.5 flex items-center justify-between relative">
+    <a href="/" class="text-Main-Bl text-xl md:text-2xl font-semibold uppercase leading-5">nyxops</a>
+    <div class="hidden lg:flex items-center gap-8 xl:gap-12">
+        <a href="/"
+            class="text-Main-Bl text-lg xl:text-xl font-medium leading-6 hover:opacity-70 transition-all duration-300">Home</a>
+        <a href="/services"
+            class="text-Main-Bl text-lg xl:text-xl font-medium leading-6 hover:opacity-70 transition-all duration-300">Services</a>
+        <a href="/cyber-essentials"
+            class="text-Main-Bl text-lg xl:text-xl font-medium leading-6 hover:opacity-70 transition-all duration-300">Cyber Essentials</a>
+
+        <!-- Company dropdown -->
+        <div data-dropdown style="position:relative;">
+            <div class="text-Main-Bl text-lg xl:text-xl font-medium leading-6 flex items-center gap-[5px] cursor-pointer"
+                style="padding: 4px 0; transition: opacity 0.3s;">
+                Company
+                <img src="{% static 'icons/dropdown-arrow.svg' %}" alt="" class="nav-arrow"
+                    style="width: 8px; height: 8px; object-fit: contain; transition: transform 0.3s;" />
+            </div>
+            <div class="nav-dropdown"
+                style="position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(8px); margin-top: 4px; width: 210px; background: #fff; border-radius: 14px; box-shadow: 0 10px 40px rgba(0,31,63,0.13); opacity: 0; visibility: hidden; transition: all 0.3s ease; display: flex; flex-direction: column; overflow: hidden; border: 1px solid rgba(0,31,63,0.06); z-index: 50; padding: 6px;">
+                <a href="/about"
+                    style="padding: 10px 18px; color: #001f3f; font-weight: 500; font-size: 15px; text-decoration: none; border-radius: 10px; transition: all 0.2s; display: block;">About
+                    us</a>
+                <a href="/careers"
+                    style="padding: 10px 18px; color: #001f3f; font-weight: 500; font-size: 15px; text-decoration: none; border-radius: 10px; transition: all 0.2s; display: block;">Careers</a>
+                <a href="/blog"
+                    style="padding: 10px 18px; color: #001f3f; font-weight: 500; font-size: 15px; text-decoration: none; border-radius: 10px; transition: all 0.2s; display: block;">Blog</a>
+            </div>
+        </div>
+
+        <a href="/resources"
+            class="text-Main-Bl text-lg xl:text-xl font-medium leading-6 hover:opacity-70 transition-all duration-300">Resources</a>
+
+        <!-- Contact dropdown -->
+        <div data-dropdown style="position:relative;">
+            <div class="text-Main-Bl text-lg xl:text-xl font-medium leading-6 flex items-center gap-[5px] cursor-pointer"
+                style="padding: 4px 0; transition: opacity 0.3s;">
+                Contact
+                <img src="{% static 'icons/dropdown-arrow.svg' %}" alt="" class="nav-arrow"
+                    style="width: 8px; height: 8px; object-fit: contain; transition: transform 0.3s;" />
+            </div>
+            <div class="nav-dropdown"
+                style="position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(8px); margin-top: 4px; width: 180px; background: #fff; border-radius: 14px; box-shadow: 0 10px 40px rgba(0,31,63,0.13); opacity: 0; visibility: hidden; transition: all 0.3s ease; display: flex; flex-direction: column; overflow: hidden; border: 1px solid rgba(0,31,63,0.06); z-index: 50; padding: 6px;">
+                <a href="/contact"
+                    style="padding: 10px 18px; color: #001f3f; font-weight: 500; font-size: 15px; text-decoration: none; border-radius: 10px; transition: all 0.2s; display: block;">Reach
+                    Out</a>
+                <a href="/intake/"
+                    style="padding: 10px 18px; color: #001f3f; font-weight: 500; font-size: 15px; text-decoration: none; border-radius: 10px; transition: all 0.2s; display: block;">Pentest
+                    Intake</a>
+            </div>
+        </div>
+    </div>
+    <button type="button" aria-label="Open menu" aria-controls="mobile-menu" class="lg:hidden flex items-center text-Main-Bl cursor-pointer" id="mobile-menu-btn">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path id="mobile-menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+    </button>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu"
+        class="hidden absolute bg-Main-Wh rounded-[10px] shadow-xl border border-gray-100 p-5 flex-col gap-4 z-50 lg:hidden"
+        style="top: 100%; right: 0; min-width: 240px; margin-top: 8px;">
+        <a href="/" class="text-Main-Bl text-lg font-medium">Home</a>
+        <a href="/services" class="text-Main-Bl text-lg font-medium">Services</a>
+        <a href="/cyber-essentials" class="text-Main-Bl text-lg font-medium">Cyber Essentials</a>
+
+        <div class="flex flex-col gap-2 pt-4 border-t border-gray-100">
+            <div class="text-Main-Bl/60 text-sm font-semibold uppercase tracking-widest">Company</div>
+            <a href="/about" class="text-Main-Bl text-lg font-medium pl-2">About us</a>
+            <a href="/careers" class="text-Main-Bl text-lg font-medium pl-2">Careers</a>
+            <a href="/blog" class="text-Main-Bl text-lg font-medium pl-2">Blog</a>
+        </div>
+
+        <div class="flex flex-col gap-2 pt-4 border-t border-gray-100">
+            <a href="/resources" class="text-Main-Bl text-lg font-medium">Resources</a>
+        </div>
+
+        <div class="flex flex-col gap-2 pt-4 border-t border-gray-100">
+            <div class="text-Main-Bl/60 text-sm font-semibold uppercase tracking-widest">Contact</div>
+            <a href="/contact" class="text-Main-Bl text-lg font-medium pl-2">Reach Out</a>
+            <a href="/intake/" class="text-Main-Bl text-lg font-medium pl-2">Pentest Intake</a>
+        </div>
+    </div>
+</nav>

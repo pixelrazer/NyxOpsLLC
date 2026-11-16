@@ -1,0 +1,240 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us – NyxOps</title>
+    <meta name="description"
+        content="Learn about NyxOps: cyber security advisors and offensive security specialists helping organisations achieve Cyber Essentials and stay secure." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/output.css' %}" />
+    <script src="{% static 'js/navbar.js' %}" defer></script>
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="NyxOps" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+</head>
+
+<body class="bg-Bg-Light-grey font-sans antialiased">
+
+    <!-- ════ HERO / NAV ════ -->
+    <section class="bg-Bg-Black overflow-hidden relative">
+        <div class="w-full max-w-[1240px] mx-auto px-5 pt-5 relative z-20">
+            {% include 'partials/navbar.html' %}
+        </div>
+
+        <div class="w-full max-w-[1240px] mx-auto px-5 py-20 lg:py-28">
+            <p class="text-white/40 text-xl font-bold uppercase tracking-widest mb-6">About Us</p>
+            <h1 class="text-Main-Wh text-5xl md:text-7xl font-bold leading-tight tracking-tight"
+                style="max-width:720px; line-height:1.05;">
+                Cyber security advisors with an attacker's mindset.
+            </h1>
+        </div>
+    </section>
+
+    <!-- ════ MISSION ════ -->
+    <section class="bg-Bg-Light-grey py-28">
+        <div class="w-full max-w-[1240px] mx-auto px-5 flex flex-col md:flex-row gap-10 md:gap-20">
+            <div
+                class="text-Main-Bl text-xl md:text-2xl font-bold uppercase leading-6 shrink-0 md:pt-2 tracking-widest">
+                Mission</div>
+            <div class="flex flex-col gap-8" style="max-width:820px">
+                <p class="text-Main-Bl text-3xl md:text-4xl font-semibold leading-tight tracking-tight"
+                    style="opacity:0.92;">
+                    We help organisations get certified, stay secure, and understand their true exposure, before
+                    adversaries do.
+                </p>
+                <p class="text-Main-Bl text-lg font-normal leading-relaxed" style="opacity:0.65; max-width:620px;">
+                    NyxOps brings together cyber security advisors and offensive security specialists. Our advisory
+                    work, from Cyber Essentials readiness to ongoing compliance, is shaped by hands-on testing
+                    experience. We don't just help you tick boxes: we make sure the controls behind them actually
+                    hold up against real attackers.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════ VALUES ════ -->
+    <section class="bg-Main-Bl py-28">
+        <div class="w-full max-w-[1240px] mx-auto px-5 flex flex-col gap-12 lg:gap-16">
+            <div class="flex flex-col gap-4">
+                <p class="text-white/40 text-xl font-bold uppercase tracking-widest">What drives us</p>
+                <h2 class="text-Main-Wh text-5xl md:text-6xl font-bold leading-tight tracking-tight"
+                    style="max-width:560px;">The values behind every engagement</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div
+                    class="bg-white/10 rounded-3xl p-8 flex flex-col gap-5 transition-all duration-300 group hover:bg-white/15 hover:-translate-y-2 cursor-pointer">
+                    <div
+                        class="w-12 h-12 bg-Main-Wh rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                        <span class="text-Main-Bl text-2xl font-bold">01</span>
+                    </div>
+                    <h3 class="text-Main-Wh text-2xl font-bold">Integrity</h3>
+                    <p class="text-white/60 text-base leading-relaxed group-hover:text-white/80">We operate with
+                        unwavering honesty globally: in scope, in
+                        findings, and in every client interaction. No hidden upsells. No inflated risk scores.</p>
+                </div>
+                <div
+                    class="bg-white/10 rounded-3xl p-8 flex flex-col gap-5 transition-all duration-300 group hover:bg-white/15 hover:-translate-y-2 cursor-pointer">
+                    <div
+                        class="w-12 h-12 bg-Main-Wh rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                        <span class="text-Main-Bl text-2xl font-bold">02</span>
+                    </div>
+                    <h3 class="text-Main-Wh text-2xl font-bold">Discretion</h3>
+                    <p class="text-white/60 text-base leading-relaxed group-hover:text-white/80">Client confidentiality
+                        is inviolable. We treat
+                        every engagement artifact, scope document, and finding as strictly privileged information.</p>
+                </div>
+                <div
+                    class="bg-white/10 rounded-3xl p-8 flex flex-col gap-5 transition-all duration-300 group hover:bg-white/15 hover:-translate-y-2 cursor-pointer">
+                    <div
+                        class="w-12 h-12 bg-Main-Wh rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                        <span class="text-Main-Bl text-2xl font-bold">03</span>
+                    </div>
+                    <h3 class="text-Main-Wh text-2xl font-bold">Technical Excellence</h3>
+                    <p class="text-white/60 text-base leading-relaxed group-hover:text-white/80">We go beyond automated
+                        tools. Our operators
+                        invest continuously in research, lab environments, and real-world adversary simulation
+                        techniques.</p>
+                </div>
+                <div
+                    class="bg-white/10 rounded-3xl p-8 flex flex-col gap-5 transition-all duration-300 group hover:bg-white/15 hover:-translate-y-2 cursor-pointer">
+                    <div
+                        class="w-12 h-12 bg-Main-Wh rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                        <span class="text-Main-Bl text-2xl font-bold">04</span>
+                    </div>
+                    <h3 class="text-Main-Wh text-2xl font-bold">Accountability</h3>
+                    <p class="text-white/60 text-base leading-relaxed group-hover:text-white/80">We stand behind every
+                        finding, recommendation,
+                        and report. If we identify a vulnerability, we'll support remediation until it's resolved.</p>
+                </div>
+                <div
+                    class="bg-white/10 rounded-3xl p-8 flex flex-col gap-5 transition-all duration-300 group hover:bg-white/15 hover:-translate-y-2 cursor-pointer">
+                    <div
+                        class="w-12 h-12 bg-Main-Wh rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                        <span class="text-Main-Bl text-2xl font-bold">05</span>
+                    </div>
+                    <h3 class="text-Main-Wh text-2xl font-bold">Collaboration</h3>
+                    <p class="text-white/60 text-base leading-relaxed group-hover:text-white/80">We work as an extension
+                        of your security team,
+                        not just a vendor. Knowledge transfer and clear communication anchor every engagement.
+                    </p>
+                </div>
+                <div
+                    class="bg-white/10 rounded-3xl p-8 flex flex-col gap-5 transition-all duration-300 group hover:bg-white/15 hover:-translate-y-2 cursor-pointer">
+                    <div
+                        class="w-12 h-12 bg-Main-Wh rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                        <span class="text-Main-Bl text-2xl font-bold">06</span>
+                    </div>
+                    <h3 class="text-Main-Wh text-2xl font-bold">Precision</h3>
+                    <p class="text-white/60 text-base leading-relaxed group-hover:text-white/80">Noise-free findings.
+                        Risk-prioritized reports.
+                        Every deliverable is built to be actioned by security engineers, not filed away in a drawer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════ WHY US ════ -->
+    <section class="bg-Bg-Light-grey py-28">
+        <div class="w-full max-w-[1240px] mx-auto px-5 flex flex-col gap-12 lg:gap-16">
+            <div class="flex flex-col md:flex-row justify-between gap-8">
+                <h2 class="text-Main-Bl text-5xl md:text-6xl font-bold leading-tight tracking-tight"
+                    style="max-width:460px;">Why organizations choose NyxOps</h2>
+                <p class="text-Main-Bl text-lg leading-relaxed self-end" style="max-width:380px; opacity:0.65;">We
+                    combine elite operator skills with professional engagement delivery. We cut no corners and assign no
+                    junior-handled work.</p>
+            </div>
+            <div class="flex flex-col gap-0">
+                <div class="flex flex-col md:flex-row items-start gap-6 py-8 border-b"
+                    style="border-color: rgba(50,146,255,0.2);">
+                    <span class="text-Main-Bl text-7xl font-bold leading-none"
+                        style="opacity:0.15; min-width:80px;">01</span>
+                    <div class="flex flex-col gap-3">
+                        <h3 class="text-Main-Bl text-2xl font-bold">Advisors Who Think Like Attackers</h3>
+                        <p class="text-Main-Bl text-base leading-relaxed" style="opacity:0.65;">Every recommendation,
+                            from a Cyber Essentials gap assessment to a pentest report, is conducted and reviewed by
+                            experienced practitioners.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row items-start gap-6 py-8 border-b"
+                    style="border-color: rgba(50,146,255,0.2);">
+                    <span class="text-Main-Bl text-7xl font-bold leading-none"
+                        style="opacity:0.15; min-width:80px;">02</span>
+                    <div class="flex flex-col gap-3">
+                        <h3 class="text-Main-Bl text-2xl font-bold">Tailored Scope, Always</h3>
+                        <p class="text-Main-Bl text-base leading-relaxed" style="opacity:0.65;">Whether you need
+                            certification, ongoing advice or testing, every engagement is scoped to your environment,
+                            threat model, and risk appetite.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row items-start gap-6 py-8 border-b"
+                    style="border-color: rgba(50,146,255,0.2);">
+                    <span class="text-Main-Bl text-7xl font-bold leading-none"
+                        style="opacity:0.15; min-width:80px;">03</span>
+                    <div class="flex flex-col gap-3">
+                        <h3 class="text-Main-Bl text-2xl font-bold">Actionable Reports</h3>
+                        <p class="text-Main-Bl text-base leading-relaxed" style="opacity:0.65;">Reports written for both
+                            executives and engineers. CVSS-scored findings, reproduction steps, and developer-ready
+                            remediation guidance.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row items-start gap-6 py-8">
+                    <span class="text-Main-Bl text-7xl font-bold leading-none"
+                        style="opacity:0.15; min-width:80px;">04</span>
+                    <div class="flex flex-col gap-3">
+                        <h3 class="text-Main-Bl text-2xl font-bold">Post-Engagement Support</h3>
+                        <p class="text-Main-Bl text-base leading-relaxed" style="opacity:0.65;">Free re-test of critical
+                            findings after remediation. Ongoing access to our operators for technical questions, at no
+                            extra cost.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-Main-Bl py-32">
+        <div class="w-full max-w-[1240px] mx-auto px-5">
+            <div class="flex flex-col">
+                <h2
+                    class="text-Bg-Light-grey text-6xl sm:text-7xl md:text-[100px] lg:text-[140px] font-medium leading-[0.9] tracking-tight m-0 p-0">
+                    Ready to Secure</h2>
+                <h2
+                    class="text-Bg-Light-grey text-6xl sm:text-7xl md:text-[100px] lg:text-[140px] font-medium leading-[0.9] tracking-tight lg:ml-[30%] m-0 p-0 mt-2 md:mt-4">
+                    Your Assets?</h2>
+            </div>
+            <div class="lg:ml-[30%] mt-8 md:mt-12 flex flex-col gap-6 md:gap-8">
+                <p class="text-white/90 text-lg md:text-[22px] font-normal leading-relaxed" style="max-width:400px;">
+                    Engage a team that thinks like your adversaries and reports with clarity.
+                </p>
+                <a href="/contact"
+                    class="pl-6 pr-1 py-1 bg-Main-Wh rounded-full flex items-center gap-5 self-start transition-all duration-300 group hover:bg-Main-Bl"
+                    style="border: 2px solid white;">
+                    <span
+                        class="text-Main-Bl text-xl lg:text-2xl font-semibold group-hover:text-white transition-colors duration-300">Start
+                        Engagement</span>
+                    <span
+                        class="p-2 bg-Main-Bl rounded-full flex items-center justify-center group-hover:bg-white transition-colors duration-300">
+                        <img src="{% static 'icons/arrow-right-wh.svg' %}" alt=""
+                            class="w-[20px] h-[20px] lg:w-[24px] lg:h-[24px] object-contain group-hover:hidden" />
+                        <img src="{% static 'icons/arrow-right-bl.svg' %}" alt=""
+                            class="w-[20px] h-[20px] lg:w-[24px] lg:h-[24px] object-contain hidden group-hover:block transition-transform duration-300 group-hover:translate-x-1" />
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    {% include 'partials/footer.html' %}
+
+</body>
+
+</html>

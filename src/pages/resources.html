@@ -1,0 +1,178 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resources – NyxOps</title>
+    <meta name="description"
+        content="Cyber Essentials guidance and trusted security resources curated by NyxOps, cyber security advisors and offensive security specialists." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/output.css' %}" />
+    <script src="{% static 'js/navbar.js' %}" defer></script>
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="NyxOps" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+</head>
+
+<body class="bg-Bg-Light-grey font-sans antialiased">
+
+    <!-- ════ HERO / NAV ════ -->
+    <section class="bg-Bg-Black overflow-hidden relative">
+        <div class="w-full max-w-[1240px] mx-auto px-5 pt-5 relative z-20">
+            {% include 'partials/navbar.html' %}
+        </div>
+
+        <div class="w-full max-w-[1240px] mx-auto px-5 py-20 lg:py-28">
+            <p class="text-white/40 text-xl font-bold uppercase tracking-widest mb-6">Resources</p>
+            <h1 class="text-Main-Wh text-5xl md:text-7xl font-bold leading-tight tracking-tight"
+                style="max-width:700px; line-height:1.05;">
+                Guidance, standards, and insights from the field.
+            </h1>
+            <p class="text-white/60 text-xl md:text-2xl font-normal leading-relaxed mt-8" style="max-width:500px;">
+                Trusted resources for getting Cyber Essentials ready and building a stronger security posture.
+            </p>
+        </div>
+    </section>
+
+    <!-- ════ RESOURCES ════ -->
+    <section class="bg-Bg-Light-grey py-20">
+        <div class="w-full max-w-[1240px] mx-auto px-5 flex flex-col gap-8">
+            <p class="text-Main-Bl text-lg font-bold uppercase tracking-widest" style="opacity:0.45">Cyber Essentials</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                <a href="https://www.ncsc.gov.uk/cyberessentials/overview" target="_blank" rel="noopener"
+                    class="bg-Main-Wh border rounded-3xl p-8 flex flex-col gap-5 transition-all duration-300 group hover:-translate-y-2 hover:shadow-lg hover:border-Main-Bl/30"
+                    style="border-color: rgba(50,146,255,0.15);">
+                    <div class="flex items-center justify-between">
+                        <span
+                            class="bg-Main-Bl text-Main-Wh text-xs font-semibold px-3 py-1.5 rounded-full transition-colors duration-300 group-hover:bg-[#1a7be0]">Guide</span>
+                        <span class="text-Main-Bl text-sm" style="opacity:0.45;">NCSC</span>
+                    </div>
+                    <h3
+                        class="text-Main-Bl text-xl font-bold leading-snug group-hover:text-[#1a7be0] transition-colors duration-300">
+                        Cyber Essentials Overview</h3>
+                    <p
+                        class="text-Main-Bl text-sm leading-relaxed opacity-60 group-hover:opacity-80 transition-opacity">
+                        The official introduction to the scheme: what it covers, the two levels of certification, and how to get started.</p>
+                    <span class="text-Main-Bl text-sm font-semibold underline underline-offset-2 mt-auto">View →</span>
+                </a>
+                <a href="https://www.ncsc.gov.uk/cyberessentials/resources" target="_blank" rel="noopener"
+                    class="bg-Main-Wh border rounded-3xl p-8 flex flex-col gap-5 transition-all duration-300 group hover:-translate-y-2 hover:shadow-lg hover:border-Main-Bl/30"
+                    style="border-color: rgba(50,146,255,0.15);">
+                    <div class="flex items-center justify-between">
+                        <span
+                            class="bg-Main-Bl text-Main-Wh text-xs font-semibold px-3 py-1.5 rounded-full transition-colors duration-300 group-hover:bg-[#1a7be0]">Requirements</span>
+                        <span class="text-Main-Bl text-sm" style="opacity:0.45;">NCSC</span>
+                    </div>
+                    <h3
+                        class="text-Main-Bl text-xl font-bold leading-snug group-hover:text-[#1a7be0] transition-colors duration-300">
+                        Cyber Essentials Requirements &amp; Resources</h3>
+                    <p
+                        class="text-Main-Bl text-sm leading-relaxed opacity-60 group-hover:opacity-80 transition-opacity">
+                        The current technical requirements, question set and supporting documents for each of the five controls.</p>
+                    <span class="text-Main-Bl text-sm font-semibold underline underline-offset-2 mt-auto">View →</span>
+                </a>
+                <a href="https://iasme.co.uk/cyber-essentials/" target="_blank" rel="noopener"
+                    class="bg-Main-Wh border rounded-3xl p-8 flex flex-col gap-5 transition-all duration-300 group hover:-translate-y-2 hover:shadow-lg hover:border-Main-Bl/30"
+                    style="border-color: rgba(50,146,255,0.15);">
+                    <div class="flex items-center justify-between">
+                        <span
+                            class="bg-Main-Bl text-Main-Wh text-xs font-semibold px-3 py-1.5 rounded-full transition-colors duration-300 group-hover:bg-[#1a7be0]">Scheme</span>
+                        <span class="text-Main-Bl text-sm" style="opacity:0.45;">IASME</span>
+                    </div>
+                    <h3
+                        class="text-Main-Bl text-xl font-bold leading-snug group-hover:text-[#1a7be0] transition-colors duration-300">
+                        IASME Cyber Essentials</h3>
+                    <p
+                        class="text-Main-Bl text-sm leading-relaxed opacity-60 group-hover:opacity-80 transition-opacity">
+                        Information from the scheme's delivery partner, including how certification works and finding a certification body.</p>
+                    <span class="text-Main-Bl text-sm font-semibold underline underline-offset-2 mt-auto">View →</span>
+                </a>
+            </div>
+            <p class="text-Main-Bl text-lg font-bold uppercase tracking-widest" style="opacity:0.45">Wider Security Guidance</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                <a href="https://www.ncsc.gov.uk/collection/small-business-guide" target="_blank" rel="noopener"
+                    class="bg-Main-Wh border rounded-3xl p-8 flex flex-col gap-5 transition-all duration-300 group hover:-translate-y-2 hover:shadow-lg hover:border-Main-Bl/30"
+                    style="border-color: rgba(50,146,255,0.15);">
+                    <div class="flex items-center justify-between">
+                        <span
+                            class="bg-Main-Bl text-Main-Wh text-xs font-semibold px-3 py-1.5 rounded-full transition-colors duration-300 group-hover:bg-[#1a7be0]">Guide</span>
+                        <span class="text-Main-Bl text-sm" style="opacity:0.45;">NCSC</span>
+                    </div>
+                    <h3
+                        class="text-Main-Bl text-xl font-bold leading-snug group-hover:text-[#1a7be0] transition-colors duration-300">
+                        Small Business Guide</h3>
+                    <p
+                        class="text-Main-Bl text-sm leading-relaxed opacity-60 group-hover:opacity-80 transition-opacity">
+                        Practical, low-cost steps small organisations can take to improve their cyber security.</p>
+                    <span class="text-Main-Bl text-sm font-semibold underline underline-offset-2 mt-auto">View →</span>
+                </a>
+                <a href="https://www.ncsc.gov.uk/collection/10-steps" target="_blank" rel="noopener"
+                    class="bg-Main-Wh border rounded-3xl p-8 flex flex-col gap-5 transition-all duration-300 group hover:-translate-y-2 hover:shadow-lg hover:border-Main-Bl/30"
+                    style="border-color: rgba(50,146,255,0.15);">
+                    <div class="flex items-center justify-between">
+                        <span
+                            class="bg-Main-Bl text-Main-Wh text-xs font-semibold px-3 py-1.5 rounded-full transition-colors duration-300 group-hover:bg-[#1a7be0]">Framework</span>
+                        <span class="text-Main-Bl text-sm" style="opacity:0.45;">NCSC</span>
+                    </div>
+                    <h3
+                        class="text-Main-Bl text-xl font-bold leading-snug group-hover:text-[#1a7be0] transition-colors duration-300">
+                        10 Steps to Cyber Security</h3>
+                    <p
+                        class="text-Main-Bl text-sm leading-relaxed opacity-60 group-hover:opacity-80 transition-opacity">
+                        Guidance for larger organisations on building a complete approach to managing cyber risk.</p>
+                    <span class="text-Main-Bl text-sm font-semibold underline underline-offset-2 mt-auto">View →</span>
+                </a>
+                <a href="https://owasp.org/www-project-top-ten/" target="_blank" rel="noopener"
+                    class="bg-Main-Wh border rounded-3xl p-8 flex flex-col gap-5 transition-all duration-300 group hover:-translate-y-2 hover:shadow-lg hover:border-Main-Bl/30"
+                    style="border-color: rgba(50,146,255,0.15);">
+                    <div class="flex items-center justify-between">
+                        <span
+                            class="bg-Main-Bl text-Main-Wh text-xs font-semibold px-3 py-1.5 rounded-full transition-colors duration-300 group-hover:bg-[#1a7be0]">Standard</span>
+                        <span class="text-Main-Bl text-sm" style="opacity:0.45;">OWASP</span>
+                    </div>
+                    <h3
+                        class="text-Main-Bl text-xl font-bold leading-snug group-hover:text-[#1a7be0] transition-colors duration-300">
+                        OWASP Top 10</h3>
+                    <p
+                        class="text-Main-Bl text-sm leading-relaxed opacity-60 group-hover:opacity-80 transition-opacity">
+                        The industry reference for the most critical web application security risks, and a core part of our testing methodology.</p>
+                    <span class="text-Main-Bl text-sm font-semibold underline underline-offset-2 mt-auto">View →</span>
+                </a>
+            </div>
+            <div class="bg-Main-Bl rounded-3xl p-8 md:p-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
+                <div class="flex flex-col gap-2">
+                    <h3 class="text-Main-Wh text-2xl md:text-3xl font-bold">Not sure where to start?</h3>
+                    <p class="text-white/70 text-base md:text-lg">Book a free Cyber Essentials readiness call and we'll
+                        tell you exactly what you need.</p>
+                </div>
+                <a href="/contact?service=cyber_essentials"
+                    class="pl-6 pr-1 py-1 bg-Main-Wh rounded-full flex items-center gap-5 self-start md:self-auto shrink-0 transition-all duration-300 group hover:bg-Main-Bl"
+                    style="border: 2px solid white;">
+                    <span
+                        class="text-Main-Bl text-xl font-semibold group-hover:text-white transition-colors duration-300">Book
+                        a call</span>
+                    <span
+                        class="p-2 bg-Main-Bl rounded-full flex items-center justify-center group-hover:bg-white transition-colors duration-300">
+                        <img src="{% static 'icons/arrow-right-wh.svg' %}" alt=""
+                            class="w-5 h-5 object-contain group-hover:hidden" />
+                        <img src="{% static 'icons/arrow-right-bl.svg' %}" alt=""
+                            class="w-5 h-5 object-contain hidden group-hover:block" />
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    {% include 'partials/footer.html' %}
+
+</body>
+
+</html>

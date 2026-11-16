@@ -1,0 +1,14 @@
+{
+  "name": "nyxops-site",
+  "private": true,
+  "description": "NyxOps static website (GitHub Pages)",
+  "scripts": {
+    "build": "python3 build.py && tailwindcss -i src/style.css -o docs/static/css/output.css --minify",
+    "watch:css": "tailwindcss -i src/style.css -o docs/static/css/output.css --watch",
+    "serve": "python3 -m http.server 8000 -d docs"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "4.2.1",
+    "tailwindcss": "4.2.1"
+  }
+}

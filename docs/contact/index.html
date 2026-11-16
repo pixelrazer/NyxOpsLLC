@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact – NyxOps Offensive Security</title>
+    <meta name="description"
+        content="Start your NyxOps engagement. Get in touch to scope web application testing, network penetration testing, vulnerability assessment, or password audit." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/output.css" />
+    <style>
+        .nyx-input {
+            width: 100%;
+            background: transparent;
+            border: none;
+            border-bottom: 1.5px solid rgba(50, 146, 255, 0.25);
+            color: #3292FF;
+            font-family: 'Inter Tight', sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 0.75rem 0;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .nyx-input::placeholder {
+            color: rgba(50, 146, 255, 0.35);
+            font-weight: 400;
+        }
+
+        .nyx-input:focus {
+            border-bottom-color: #3292FF;
+        }
+
+        .nyx-label {
+            font-family: 'Inter Tight', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: rgba(50, 146, 255, 0.5);
+        }
+
+        .nyx-textarea {
+            width: 100%;
+            background: transparent;
+            border: none;
+            border-bottom: 1.5px solid rgba(50, 146, 255, 0.25);
+            color: #3292FF;
+            font-family: 'Inter Tight', sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 0.75rem 0;
+            outline: none;
+            resize: none;
+            transition: border-color 0.2s;
+        }
+
+        .nyx-textarea::placeholder {
+            color: rgba(50, 146, 255, 0.35);
+            font-weight: 400;
+        }
+
+        .nyx-textarea:focus {
+            border-bottom-color: #3292FF;
+        }
+    </style>
+    <script src="../static/js/navbar.js" defer></script>
+    <script src="../static/js/config.js" defer></script>
+    <script src="../static/js/forms.js" defer></script>
+    <link rel="icon" type="image/png" href="../favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../favicon/favicon.svg" />
+    <link rel="shortcut icon" href="../favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="NyxOps" />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
+</head>
+
+<body class="bg-Bg-Light-grey font-sans antialiased">
+
+    <!-- ════ HERO / NAV ════ -->
+    <section class="bg-Main-Bl overflow-hidden relative">
+        <div class="w-full max-w-[1240px] mx-auto px-5 pt-5 relative z-20">
+            <!-- NyxOps Shared Navbar Partial -->
+<nav class="bg-Main-Wh rounded-[5px] px-5 py-3.5 flex items-center justify-between relative">
+    <a href="../" class="text-Main-Bl text-xl md:text-2xl font-semibold uppercase leading-5">nyxops</a>
+    <div class="hidden lg:flex items-center gap-8 xl:gap-12">
+        <a href="../"
+            class="text-Main-Bl text-lg xl:text-xl font-medium leading-6 hover:opacity-70 transition-all duration-300">Home</a>
+        <a href="../services/"
+            class="text-Main-Bl text-lg xl:text-xl font-medium leading-6 hover:opacity-70 transition-all duration-300">Services</a>
+        <a href="../cyber-essentials/"
+            class="text-Main-Bl text-lg xl:text-xl font-medium leading-6 hover:opacity-70 transition-all duration-300">Cyber Essentials</a>
+
+        <!-- Company dropdown -->
+        <div data-dropdown style="position:relative;">
+            <div class="text-Main-Bl text-lg xl:text-xl font-medium leading-6 flex items-center gap-[5px] cursor-pointer"
+                style="padding: 4px 0; transition: opacity 0.3s;">
+                Company
+                <img src="../static/icons/dropdown-arrow.svg" alt="" class="nav-arrow"
+                    style="width: 8px; height: 8px; object-fit: contain; transition: transform 0.3s;" />
+            </div>
+            <div class="nav-dropdown"
+                style="position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(8px); margin-top: 4px; width: 210px; background: #fff; border-radius: 14px; box-shadow: 0 10px 40px rgba(0,31,63,0.13); opacity: 0; visibility: hidden; transition: all 0.3s ease; display: flex; flex-direction: column; overflow: hidden; border: 1px solid rgba(0,31,63,0.06); z-index: 50; padding: 6px;">
+                <a href="../about/"
+                    style="padding: 10px 18px; color: #001f3f; font-weight: 500; font-size: 15px; text-decoration: none; border-radius: 10px; transition: all 0.2s; display: block;">About
+                    us</a>
+                <a href="../careers/"
+                    style="padding: 10px 18px; color: #001f3f; font-weight: 500; font-size: 15px; text-decoration: none; border-radius: 10px; transition: all 0.2s; display: block;">Careers</a>
+                <a href="../blog/"
+                    style="padding: 10px 18px; color: #001f3f; font-weight: 500; font-size: 15px; text-decoration: none; border-radius: 10px; transition: all 0.2s; display: block;">Blog</a>
+            </div>
+        </div>
+
+        <a href="../resources/"
+            class="text-Main-Bl text-lg xl:text-xl font-medium leading-6 hover:opacity-70 transition-all duration-300">Resources</a>
+
+        <!-- Contact dropdown -->
+        <div data-dropdown style="position:relative;">
+            <div class="text-Main-Bl text-lg xl:text-xl font-medium leading-6 flex items-center gap-[5px] cursor-pointer"
+                style="padding: 4px 0; transition: opacity 0.3s;">
+                Contact
+                <img src="../static/icons/dropdown-arrow.svg" alt="" class="nav-arrow"
+                    style="width: 8px; height: 8px; object-fit: contain; transition: transform 0.3s;" />
+            </div>
+            <div class="nav-dropdown"
+                style="position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(8px); margin-top: 4px; width: 180px; background: #fff; border-radius: 14px; box-shadow: 0 10px 40px rgba(0,31,63,0.13); opacity: 0; visibility: hidden; transition: all 0.3s ease; display: flex; flex-direction: column; overflow: hidden; border: 1px solid rgba(0,31,63,0.06); z-index: 50; padding: 6px;">
+                <a href="../contact/"
+                    style="padding: 10px 18px; color: #001f3f; font-weight: 500; font-size: 15px; text-decoration: none; border-radius: 10px; transition: all 0.2s; display: block;">Reach
+                    Out</a>
+                <a href="../intake/"
+                    style="padding: 10px 18px; color: #001f3f; font-weight: 500; font-size: 15px; text-decoration: none; border-radius: 10px; transition: all 0.2s; display: block;">Pentest
+                    Intake</a>
+            </div>
+        </div>
+    </div>
+    <button type="button" aria-label="Open menu" aria-controls="mobile-menu" class="lg:hidden flex items-center text-Main-Bl cursor-pointer" id="mobile-menu-btn">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path id="mobile-menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+    </button>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu"
+        class="hidden absolute bg-Main-Wh rounded-[10px] shadow-xl border border-gray-100 p-5 flex-col gap-4 z-50 lg:hidden"
+        style="top: 100%; right: 0; min-width: 240px; margin-top: 8px;">
+        <a href="../" class="text-Main-Bl text-lg font-medium">Home</a>
+        <a href="../services/" class="text-Main-Bl text-lg font-medium">Services</a>
+        <a href="../cyber-essentials/" class="text-Main-Bl text-lg font-medium">Cyber Essentials</a>
+
+        <div class="flex flex-col gap-2 pt-4 border-t border-gray-100">
+            <div class="text-Main-Bl/60 text-sm font-semibold uppercase tracking-widest">Company</div>
+            <a href="../about/" class="text-Main-Bl text-lg font-medium pl-2">About us</a>
+            <a href="../careers/" class="text-Main-Bl text-lg font-medium pl-2">Careers</a>
+            <a href="../blog/" class="text-Main-Bl text-lg font-medium pl-2">Blog</a>
+        </div>
+
+        <div class="flex flex-col gap-2 pt-4 border-t border-gray-100">
+            <a href="../resources/" class="text-Main-Bl text-lg font-medium">Resources</a>
+        </div>
+
+        <div class="flex flex-col gap-2 pt-4 border-t border-gray-100">
+            <div class="text-Main-Bl/60 text-sm font-semibold uppercase tracking-widest">Contact</div>
+            <a href="../contact/" class="text-Main-Bl text-lg font-medium pl-2">Reach Out</a>
+            <a href="../intake/" class="text-Main-Bl text-lg font-medium pl-2">Pentest Intake</a>
+        </div>
+    </div>
+</nav>
+        </div>
+
+        <div class="w-full max-w-[1240px] mx-auto px-5 py-20 lg:py-28">
+            <p class="text-white/40 text-xl font-bold uppercase tracking-widest mb-6">Get In Touch</p>
+            <h1 class="text-Main-Wh text-5xl md:text-7xl font-bold leading-tight tracking-tight"
+                style="max-width:700px; line-height:1.05;">
+                Let's Start an Engagement.
+            </h1>
+            <p class="text-white/60 text-xl md:text-2xl font-normal leading-relaxed mt-8" style="max-width:520px;">
+                Get ready for Cyber Essentials, request a pentest quote, or just ask a question. Reach out and we
+                will reply fast.
+            </p>
+        </div>
+    </section>
+
+    <!-- ════ CONTACT FORM + INFO ════ -->
+    <section class="bg-Bg-Light-grey py-28">
+        <div class="w-full max-w-[1240px] mx-auto px-5 flex flex-col lg:flex-row gap-12 lg:gap-20">
+
+            <!-- FORM -->
+            <form id="contact-form" class="flex flex-col gap-8 flex-1" novalidate>
+                <h2 class="text-Main-Bl text-3xl md:text-4xl font-bold tracking-tight">Send us a message</h2>
+                <div id="contact-success" hidden
+                    class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 rounded mb-4" role="status">
+                    <p class="font-bold" data-success-title>Message Sent!</p>
+                    <p data-success-body>Thank you for reaching out. We have received your message and will get back
+                        to you within 1 business day.</p>
+                </div>
+                <div id="contact-error" hidden class="bg-red-50 border-l-4 border-red-500 text-red-700 p-4 rounded mb-4"
+                    role="alert"></div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="flex flex-col gap-2">
+                        <label class="nyx-label">First Name</label>
+                        <input type="text" name="first_name" placeholder="John" class="nyx-input" required />
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label class="nyx-label">Last Name</label>
+                        <input type="text" name="last_name" placeholder="Doe" class="nyx-input" required />
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <label class="nyx-label">Work Email</label>
+                    <input type="email" name="email" placeholder="john@company.com" class="nyx-input" required />
+                </div>
+                <div class="flex flex-col gap-2">
+                    <label class="nyx-label">Company / Organization</label>
+                    <input type="text" name="company" placeholder="Acme Corp" class="nyx-input" />
+                </div>
+                <div class="flex flex-col gap-2">
+                    <label class="nyx-label">Service Interest</label>
+                    <select name="service" class="nyx-input"
+                        style="appearance:none; cursor:pointer; background-color: transparent;">
+                        <option value="" disabled selected style="color: rgba(50,146,255,0.35);">Select a service...
+                        </option>
+                        <optgroup label="Advisory &amp; Compliance">
+                            <option value="cyber_essentials">Cyber Essentials</option>
+                            <option value="cyber_essentials_plus">Cyber Essentials Plus</option>
+                            <option value="advisory">Ongoing Cyber Advisory</option>
+                        </optgroup>
+                        <optgroup label="Offensive Security">
+                            <option value="web">Web Application Testing</option>
+                            <option value="network">Network Penetration Testing</option>
+                            <option value="vuln">Vulnerability Assessment</option>
+                            <option value="password">Password Audit</option>
+                        </optgroup>
+                        <option value="other">Something else</option>
+                    </select>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <label class="nyx-label">Message</label>
+                    <textarea name="message" rows="4"
+                        placeholder="Describe your environment, scope, timeline, or any specific questions..."
+                        class="nyx-textarea" required></textarea>
+                </div>
+                <!-- Honeypot: humans never see or fill this -->
+                <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true"
+                    style="position:absolute; left:-9999px;" />
+                <button type="submit" id="contact-submit"
+                    class="pl-6 pr-1 py-1 bg-Main-Bl rounded-full flex items-center gap-5 self-start transition-all duration-300 group hover:bg-[#1a7be0]">
+                    <span class="text-Main-Wh text-xl font-semibold" data-label>Send Message</span>
+                    <span
+                        class="p-2 bg-Main-Wh rounded-full flex items-center justify-center group-hover:bg-[#1a7be0] transition-colors duration-300">
+                        <img src="../static/icons/arrow-right-bl.svg" alt=""
+                            class="w-5 h-5 object-contain group-hover:hidden" />
+                        <img src="../static/icons/arrow-right-wh.svg" alt=""
+                            class="w-5 h-5 object-contain hidden group-hover:block transition-transform duration-300 group-hover:translate-x-1" />
+                    </span>
+                </button>
+            </form>
+
+            <!-- INFO PANEL -->
+            <div class="flex flex-col gap-8 lg:w-80 shrink-0">
+                <div class="bg-Main-Bl rounded-3xl p-8 flex flex-col gap-6">
+                    <h3 class="text-Main-Wh text-2xl font-bold">What to Expect</h3>
+                    <div class="flex flex-col gap-5">
+                        <div class="flex flex-col gap-1.5">
+                            <span class="text-white/40 text-xs font-bold uppercase tracking-widest">Response Time</span>
+                            <span class="text-Main-Wh text-base font-medium">Within 1 business day</span>
+                        </div>
+                        <div class="flex flex-col gap-1.5">
+                            <span
+                                class="text-white/40 text-xs font-bold uppercase tracking-widest">Confidentiality</span>
+                            <span class="text-Main-Wh text-base font-medium">NDA available before any scoping call</span>
+                        </div>
+                        <div class="flex flex-col gap-1.5">
+                            <span class="text-white/40 text-xs font-bold uppercase tracking-widest">Direct Email</span>
+                            <a href="mailto:csectld@proton.me"
+                                class="text-Main-Wh text-base font-medium underline underline-offset-2 hover:text-[#3292FF] transition-colors duration-300">csectld@proton.me</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-Main-Wh border rounded-3xl p-8 flex flex-col gap-5"
+                    style="border-color: rgba(50,146,255,0.15);">
+                    <h3 class="text-Main-Bl text-xl font-bold">Our Process</h3>
+                    <ol class="flex flex-col gap-4">
+                        <li class="flex items-start gap-4">
+                            <span class="text-Main-Bl text-3xl font-bold leading-none"
+                                style="opacity:0.15; min-width:32px;">1</span>
+                            <div class="flex flex-col gap-0.5">
+                                <span class="text-Main-Bl text-sm font-bold">Initial Inquiry</span>
+                                <span class="text-Main-Bl text-sm" style="opacity:0.6;">Tell us about your environment
+                                    and goals.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="text-Main-Bl text-3xl font-bold leading-none"
+                                style="opacity:0.15; min-width:32px;">2</span>
+                            <div class="flex flex-col gap-0.5">
+                                <span class="text-Main-Bl text-sm font-bold">Discovery Call</span>
+                                <span class="text-Main-Bl text-sm" style="opacity:0.6;">30-minute call to understand
+                                    your goals, whether that's certification, advice, or testing.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="text-Main-Bl text-3xl font-bold leading-none"
+                                style="opacity:0.15; min-width:32px;">3</span>
+                            <div class="flex flex-col gap-0.5">
+                                <span class="text-Main-Bl text-sm font-bold">Proposal & SOW</span>
+                                <span class="text-Main-Bl text-sm" style="opacity:0.6;">Detailed proposal with timeline,
+                                    methodology, and cost.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="text-Main-Bl text-3xl font-bold leading-none"
+                                style="opacity:0.15; min-width:32px;">4</span>
+                            <div class="flex flex-col gap-0.5">
+                                <span class="text-Main-Bl text-sm font-bold">Delivery</span>
+                                <span class="text-Main-Bl text-sm" style="opacity:0.6;">Readiness support through to
+                                    certification, or testing with an actionable final report.</span>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- ════════════════════════════════════════════
+         FOOTER
+         ════════════════════════════════════════════ -->
+    <footer class="bg-Main-Bl border-t border-white/20">
+        <div
+            class="w-full max-w-[1240px] mx-auto px-5 py-8 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+            <span class="text-white/60 text-sm font-normal">© 2026 NyxOps. All rights reserved.</span>
+            <div class="flex flex-wrap items-center justify-center md:justify-end gap-4 md:gap-8">
+                <a href="../privacy-policy/" class="text-Main-Wh text-sm font-normal hover:underline">Privacy Policy</a>
+                <a href="../terms-of-service/" class="text-Main-Wh text-sm font-normal hover:underline">Terms of
+                    Service</a>
+                <a href="../responsible-disclosure/" class="text-Main-Wh text-sm font-normal hover:underline">Responsible
+                    Disclosure</a>
+                <a href="../data-protection/" class="text-Main-Wh text-sm font-normal hover:underline">Data Protection</a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

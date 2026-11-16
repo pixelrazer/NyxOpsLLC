@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsible Disclosure – NyxOps</title>
+    <meta name="description"
+        content="NyxOps Responsible Disclosure Policy: how to report security vulnerabilities in our systems responsibly." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/output.css" />
+    <style>
+        .legal-content {
+            font-family: 'Inter Tight', sans-serif;
+            color: #121212;
+        }
+
+        .legal-content h2 {
+            font-size: 1.375rem;
+            font-weight: 700;
+            color: #3292FF;
+            margin: 2.5rem 0 0.75rem;
+            letter-spacing: -0.02em;
+        }
+
+        .legal-content h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #3292FF;
+            margin: 1.5rem 0 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .legal-content p {
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.8;
+            color: #121212;
+            opacity: 0.7;
+            margin: 0 0 0.875rem;
+        }
+
+        .legal-content ul,
+        .legal-content ol {
+            margin: 0 0 0.875rem;
+            padding-left: 1.25rem;
+            list-style: none;
+        }
+
+        .legal-content ul li,
+        .legal-content ol li {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #121212;
+            opacity: 0.7;
+            margin-bottom: 0.35rem;
+            padding-left: 1rem;
+            position: relative;
+        }
+
+        .legal-content ul li::before {
+            content: "•";
+            position: absolute;
+            left: -0.25rem;
+            color: rgba(50, 146, 255, 0.5);
+        }
+
+        .legal-content ol {
+            counter-reset: item;
+        }
+
+        .legal-content ol li {
+            counter-increment: item;
+        }
+
+        .legal-content ol li::before {
+            content: counter(item) ".";
+            position: absolute;
+            left: -1rem;
+            color: rgba(50, 146, 255, 0.6);
+            font-weight: 700;
+        }
+
+        .legal-content a {
+            color: #3292FF;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        .legal-content strong {
+            font-weight: 700;
+            color: #121212;
+        }
+
+        .contact-banner {
+            background: #3292FF;
+            border-radius: 1.5rem;
+            padding: 1.75rem 2rem;
+            margin: 2rem 0;
+        }
+
+        .contact-banner p {
+            color: white;
+            opacity: 1;
+            margin: 0;
+            font-size: 1rem;
+            line-height: 1.75;
+        }
+
+        .contact-banner a {
+            color: white;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        .contact-banner strong {
+            color: white;
+        }
+    </style>
+    <link rel="icon" type="image/png" href="../favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../favicon/favicon.svg" />
+    <link rel="shortcut icon" href="../favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="NyxOps" />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
+</head>
+
+<body class="bg-Bg-Light-grey font-sans antialiased">
+
+    <!-- ════ HEADER / NAV ════ -->
+    <header class="bg-Main-Bl">
+        <div class="w-full max-w-[1240px] mx-auto px-5 pt-5 relative z-20">
+            <nav class="bg-Main-Wh rounded-[5px] px-5 py-3.5 flex items-center justify-between">
+                <a href="../" class="text-Main-Bl text-xl md:text-2xl font-semibold uppercase leading-5">nyxops</a>
+                <div class="hidden md:flex items-center gap-6 lg:gap-12">
+                    <a href="../"
+                        class="text-Main-Bl text-lg md:text-xl font-medium leading-6 hover:opacity-70 transition-all duration-300">Home</a>
+                    <a href="../services/"
+                        class="text-Main-Bl text-lg md:text-xl font-medium leading-6 flex items-center gap-[5px] hover:opacity-70 transition-all duration-300">Services
+                        <img src="../static/icons/dropdown-arrow.svg" alt=""
+                            class="w-2 h-2 object-contain" /></a>
+                    <a href="../about/"
+                        class="text-Main-Bl text-lg md:text-xl font-medium leading-6 flex items-center gap-[5px] hover:opacity-70 transition-all duration-300">About
+                        us <img src="../static/icons/dropdown-arrow.svg" alt=""
+                            class="w-2 h-2 object-contain" /></a>
+                    <a href="../resources/"
+                        class="text-Main-Bl text-lg md:text-xl font-medium leading-6 flex items-center gap-[5px] hover:opacity-70 transition-all duration-300">Resources
+                        <img src="../static/icons/dropdown-arrow.svg" alt=""
+                            class="w-2 h-2 object-contain" /></a>
+                    <a href="../contact/"
+                        class="text-Main-Bl text-lg md:text-xl font-medium leading-6 flex items-center gap-[5px] hover:opacity-70 transition-all duration-300">Contact
+                        <img src="../static/icons/dropdown-arrow.svg" alt=""
+                            class="w-2 h-2 object-contain" /></a>
+                </div>
+                <div class="md:hidden flex items-center text-Main-Bl">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </div>
+            </nav>
+        </div>
+        <div class="w-full max-w-[1240px] mx-auto px-5 py-16 lg:py-20">
+            <p class="text-white/40 text-sm font-bold uppercase tracking-widest mb-5">Legal</p>
+            <h1 class="text-Main-Wh text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight">Responsible
+                Disclosure</h1>
+            <p class="text-white/40 text-base mt-4">Last updated: March 7, 2026</p>
+        </div>
+    </header>
+
+    <!-- ════ LEGAL BODY ════ -->
+    <div class="bg-Bg-Light-grey">
+        <div class="w-full mx-auto px-5 py-20" style="max-width: 780px;">
+            <div class="legal-content">
+
+                <p>NyxOps is committed to responsible and coordinated disclosure of security vulnerabilities. We
+                    recognize the critical role that independent security researchers and the broader security community
+                    play in identifying and remedying vulnerabilities that may otherwise go undetected. This Responsible
+                    Disclosure Policy ("Policy") describes how NyxOps handles vulnerability reports submitted in good
+                    faith.</p>
+
+                <div class="contact-banner">
+                    <p><strong>To report a security vulnerability in NyxOps-operated systems, contact:</strong><br />
+                        Email: <a href="mailto:csectld@proton.me">csectld@proton.me</a></p>
+                </div>
+
+                <h2>1. Scope</h2>
+                <p>This Policy applies to security vulnerabilities in systems operated by NyxOps, including the primary
+                    website (nyxops.org) and all subdomains, any client-facing portals or authenticated service
+                    platforms, and NyxOps-controlled APIs and web services.</p>
+
+                <h3>Out of Scope</h3>
+                <p>The following are explicitly out of scope and must not be tested or submitted:</p>
+                <ul>
+                    <li>Denial-of-Service (DoS or DDoS) attacks of any kind</li>
+                    <li>Spam, social engineering, or phishing attacks targeting NyxOps staff</li>
+                    <li>Physical security attacks against NyxOps facilities or personnel</li>
+                    <li>Vulnerabilities in third-party services or software not controlled by NyxOps</li>
+                    <li>Automated scanning generating significant traffic or degrading service availability</li>
+                    <li>Theoretical vulnerabilities lacking an exploitation proof-of-concept</li>
+                </ul>
+
+                <h2>2. Responsible Disclosure Guidelines</h2>
+                <p>To qualify for recognition and protection under this Policy, reporters must:</p>
+                <ol>
+                    <li><strong>Report promptly.</strong> Submit details as soon as practical after discovery, and
+                        refrain from further exploitation.</li>
+                    <li><strong>Do not access, modify, or exfiltrate data.</strong> Limit testing to what is strictly
+                        necessary to demonstrate the vulnerability.</li>
+                    <li><strong>Do not disrupt services.</strong> Testing must not degrade, disrupt, or destroy the
+                        availability or integrity of NyxOps systems.</li>
+                    <li><strong>Coordinate disclosure.</strong> Do not publish vulnerability details until NyxOps has
+                        had a reasonable opportunity to investigate and remediate.</li>
+                    <li><strong>Act in good faith.</strong> Submissions must be made with genuine intent to improve
+                        security, not for extortion or unauthorized access.</li>
+                </ol>
+
+                <h2>3. What to Include in Your Report</h2>
+                <p>Please include as much of the following as possible:</p>
+                <ul>
+                    <li>A clear description of the vulnerability and its potential impact</li>
+                    <li>Affected URL(s), endpoint(s), parameter(s), or components</li>
+                    <li>Step-by-step proof-of-concept or reproduction steps</li>
+                    <li>Supporting materials: screenshots, HTTP captures, or video recordings</li>
+                    <li>CVSS score or severity rating, if known</li>
+                    <li>Suggested remediation or mitigation, if applicable</li>
+                </ul>
+
+                <h2>4. Our Commitments to Reporters</h2>
+                <p>Upon receipt of a good-faith report submitted in accordance with this Policy, NyxOps commits to:</p>
+                <ul>
+                    <li><strong>Acknowledgment</strong> within 3 business days of receipt</li>
+                    <li><strong>Initial severity evaluation</strong> communicated within 10 business days</li>
+                    <li><strong>Remediation</strong> within 30 days for critical issues, 60 days for high severity, 90
+                        days for others where technically feasible</li>
+                    <li><strong>Notification</strong> when the issue is resolved and whether public disclosure may
+                        proceed</li>
+                    <li><strong>Public credit</strong> in our security acknowledgments, with your permission</li>
+                    <li><strong>No legal action</strong> against researchers who act in good faith and comply with this
+                        Policy</li>
+                </ul>
+
+                <h2>5. Safe Harbor</h2>
+                <p>NyxOps considers security research conducted in accordance with this Policy to constitute authorized
+                    testing and will not initiate legal action for such activity. If a third party initiates legal
+                    action in connection with activities conducted under this Policy and in good faith, we will take
+                    steps to make clear that your actions were authorized.</p>
+
+                <h2>6. No Bug Bounty</h2>
+                <p>NyxOps does not currently operate a paid bug bounty program. While we value good-faith security
+                    research, we are not currently in a position to offer financial compensation for reports. This
+                    Policy is subject to change, and we will update this page if a formal program is launched.</p>
+
+                <h2>7. Contact</h2>
+                <p><strong>NyxOps Security Team</strong><br />Email: <a
+                        href="mailto:csectld@proton.me">csectld@proton.me</a></p>
+
+            </div>
+        </div>
+    </div>
+
+        <!-- ════════════════════════════════════════════
+         FOOTER
+         ════════════════════════════════════════════ -->
+    <footer class="bg-Main-Bl border-t border-white/20">
+        <div
+            class="w-full max-w-[1240px] mx-auto px-5 py-8 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+            <span class="text-white/60 text-sm font-normal">© 2026 NyxOps. All rights reserved.</span>
+            <div class="flex flex-wrap items-center justify-center md:justify-end gap-4 md:gap-8">
+                <a href="../privacy-policy/" class="text-Main-Wh text-sm font-normal hover:underline">Privacy Policy</a>
+                <a href="../terms-of-service/" class="text-Main-Wh text-sm font-normal hover:underline">Terms of
+                    Service</a>
+                <a href="../responsible-disclosure/" class="text-Main-Wh text-sm font-normal hover:underline">Responsible
+                    Disclosure</a>
+                <a href="../data-protection/" class="text-Main-Wh text-sm font-normal hover:underline">Data Protection</a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,282 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services – NyxOps Cyber Advisory &amp; Offensive Security</title>
+    <meta name="description"
+        content="NyxOps services: Cyber Essentials and Cyber Essentials Plus advisory, ongoing cyber security advice, web application testing, network penetration testing, vulnerability assessments, and password audits." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/output.css' %}" />
+    <script src="{% static 'js/navbar.js' %}" defer></script>
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="NyxOps" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+</head>
+
+<body class="bg-Bg-Light-grey font-sans antialiased">
+
+    <!-- ════ HERO / NAV ════ -->
+    <section class="bg-Main-Bl overflow-hidden relative">
+        <div class="w-full max-w-[1240px] mx-auto px-5 pt-5 relative z-20">
+            {% include 'partials/navbar.html' %}
+        </div>
+
+        <div class="w-full max-w-[1240px] mx-auto px-5 py-20 lg:py-28">
+            <p class="text-white/40 text-xl font-bold uppercase tracking-widest mb-6">Our Services</p>
+            <h1 class="text-Main-Wh text-5xl md:text-7xl font-bold leading-tight tracking-tight"
+                style="max-width:700px; line-height:1.05;">
+                Advise.<br>Certify.<br>Test.
+            </h1>
+            <p class="text-white/60 text-xl md:text-2xl font-normal leading-relaxed mt-8" style="max-width:520px;">
+                Cyber security advice that gets you certified, backed by the offensive expertise to prove your
+                defences hold.
+            </p>
+        </div>
+    </section>
+
+    <!-- ════ ADVISORY & COMPLIANCE ════ -->
+    <section class="bg-Bg-Light-grey pt-28">
+        <div class="w-full max-w-[1240px] mx-auto px-5 flex flex-col gap-12 lg:gap-16">
+
+            <div class="flex flex-col gap-6">
+                <p class="text-Main-Bl text-lg font-bold uppercase tracking-widest" style="opacity:0.45">01 / Primary</p>
+                <h2 class="text-Main-Bl text-5xl md:text-7xl lg:text-[96px] font-medium leading-none tracking-tight">
+                    Advisory &amp; Compliance</h2>
+                <div class="flex flex-col md:flex-row justify-between items-start gap-8 md:gap-4">
+                    <p class="text-Main-Bl text-lg lg:text-xl font-normal leading-relaxed"
+                        style="max-width:500px; opacity:0.75;">
+                        We act as your cyber security advisors, guiding you to Cyber Essentials and Cyber Essentials
+                        Plus certification and keeping you protected long after the certificate arrives.
+                    </p>
+                    <a href="/cyber-essentials"
+                        class="pl-6 pr-1 py-1 bg-Main-Bl rounded-full flex items-center gap-5 transition-all duration-300 self-start group hover:bg-[#1a7be0]">
+                        <span class="text-Main-Wh text-xl lg:text-2xl font-semibold">About Cyber Essentials</span>
+                        <span
+                            class="p-2 bg-Main-Wh rounded-full flex items-center justify-center group-hover:bg-[#1a7be0] transition-colors duration-300">
+                            <img src="{% static 'icons/arrow-right-bl.svg' %}" alt=""
+                                class="w-[20px] h-[20px] lg:w-[24px] lg:h-[24px] object-contain group-hover:hidden" />
+                            <img src="{% static 'icons/arrow-right-wh.svg' %}" alt=""
+                                class="w-[20px] h-[20px] lg:w-[24px] lg:h-[24px] object-contain hidden group-hover:block transition-transform duration-300 group-hover:translate-x-1" />
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div
+                    class="bg-Main-Wh border rounded-3xl p-8 flex flex-col justify-between min-h-[300px] transition-all duration-300 group hover:-translate-y-2 hover:shadow-lg"
+                    style="border-color: rgba(50,146,255,0.15);">
+                    <img src="{% static 'icons/abstract-ico-3.svg' %}" alt=""
+                        class="w-[64px] h-[64px] object-contain transition-transform duration-300 group-hover:scale-110" />
+                    <div class="flex flex-col gap-4 mt-8">
+                        <h3 class="text-Main-Bl text-[28px] font-semibold leading-tight">Cyber Essentials Readiness</h3>
+                        <p class="text-Main-Bl text-lg font-normal leading-snug" style="opacity:0.7;">Gap assessment against the five controls, a prioritised remediation plan, and support completing your self-assessment so you pass first time.</p>
+                    </div>
+                </div>
+                <div
+                    class="bg-Main-Wh border rounded-3xl p-8 flex flex-col justify-between min-h-[300px] transition-all duration-300 group hover:-translate-y-2 hover:shadow-lg"
+                    style="border-color: rgba(50,146,255,0.15);">
+                    <img src="{% static 'icons/abstract-ico.svg' %}" alt=""
+                        class="w-[64px] h-[64px] object-contain transition-transform duration-300 group-hover:scale-110" />
+                    <div class="flex flex-col gap-4 mt-8">
+                        <h3 class="text-Main-Bl text-[28px] font-semibold leading-tight">Cyber Essentials Plus Preparation</h3>
+                        <p class="text-Main-Bl text-lg font-normal leading-snug" style="opacity:0.7;">Pre-audit vulnerability scans and device, account and MFA checks, so the technical audit holds no surprises.</p>
+                    </div>
+                </div>
+                <div
+                    class="bg-Main-Wh border rounded-3xl p-8 flex flex-col justify-between min-h-[300px] transition-all duration-300 group hover:-translate-y-2 hover:shadow-lg"
+                    style="border-color: rgba(50,146,255,0.15);">
+                    <img src="{% static 'icons/abstract-ico-2.svg' %}" alt=""
+                        class="w-[64px] h-[64px] object-contain transition-transform duration-300 group-hover:scale-110" />
+                    <div class="flex flex-col gap-4 mt-8">
+                        <h3 class="text-Main-Bl text-[28px] font-semibold leading-tight">Ongoing Cyber Advisory</h3>
+                        <p class="text-Main-Bl text-lg font-normal leading-snug" style="opacity:0.7;">A named advisor all year round: policy reviews, patching and access health checks, renewal support and guidance as requirements change.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════ OFFENSIVE SECURITY ════ -->
+    <section class="bg-Bg-Light-grey py-28">
+        <div class="w-full max-w-[1240px] mx-auto px-5 flex flex-col gap-12 lg:gap-16">
+
+            <div class="flex flex-col gap-6">
+                <p class="text-Main-Bl text-lg font-bold uppercase tracking-widest" style="opacity:0.45">02 / Testing</p>
+                <h2 class="text-Main-Bl text-5xl md:text-7xl lg:text-[96px] font-medium leading-none tracking-tight">
+                    Offensive Security</h2>
+                <div class="flex flex-col md:flex-row justify-between items-start gap-8 md:gap-4">
+                    <p class="text-Main-Bl text-lg lg:text-xl font-normal leading-relaxed"
+                        style="max-width:460px; opacity:0.75;">
+                        Treat every engagement as a unique intelligence mission. We scope it precisely, execute with
+                        discipline, and report it with clarity.
+                    </p>
+                    <a href="/intake/"
+                        class="pl-6 pr-1 py-1 bg-Main-Bl rounded-full flex items-center gap-5 transition-all duration-300 self-start group hover:bg-[#1a7be0]">
+                        <span class="text-Main-Wh text-xl lg:text-2xl font-semibold">Request a Pentest</span>
+                        <span
+                            class="p-2 bg-Main-Wh rounded-full flex items-center justify-center group-hover:bg-[#1a7be0] transition-colors duration-300">
+                            <img src="{% static 'icons/arrow-right-bl.svg' %}" alt=""
+                                class="w-[20px] h-[20px] lg:w-[24px] lg:h-[24px] object-contain group-hover:hidden" />
+                            <img src="{% static 'icons/arrow-right-wh.svg' %}" alt=""
+                                class="w-[20px] h-[20px] lg:w-[24px] lg:h-[24px] object-contain hidden group-hover:block transition-transform duration-300 group-hover:translate-x-1" />
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div
+                    class="bg-Main-Bl rounded-3xl p-8 flex flex-col justify-between min-h-[300px] transition-all duration-300 group hover:-translate-y-2 hover:bg-[#0a0a0a] cursor-pointer">
+                    <img src="{% static 'icons/abstract-ico.svg' %}" alt=""
+                        class="w-[64px] h-[64px] object-contain transition-transform duration-300 group-hover:scale-110" />
+                    <div class="flex flex-col gap-4 mt-8">
+                        <h3 class="text-Bg-Light-grey text-[28px] font-semibold leading-tight group-hover:text-Main-Wh">
+                            Web Application Testing
+                        </h3>
+                        <p
+                            class="text-Bg-Light-grey text-lg font-normal leading-snug opacity-90 group-hover:opacity-100">
+                            Perform comprehensive
+                            assessments to identify SQL injection, XSS, authentication flaws, and business logic
+                            vulnerabilities aligned to OWASP Top 10 and beyond.</p>
+                    </div>
+                </div>
+                <div
+                    class="bg-Main-Bl rounded-3xl p-8 flex flex-col justify-between min-h-[300px] transition-all duration-300 group hover:-translate-y-2 hover:bg-[#0a0a0a] cursor-pointer">
+                    <img src="{% static 'icons/abstract-ico-2.svg' %}" alt=""
+                        class="w-[64px] h-[64px] object-contain transition-transform duration-300 group-hover:scale-110" />
+                    <div class="flex flex-col gap-4 mt-8">
+                        <h3 class="text-Bg-Light-grey text-[28px] font-semibold leading-tight group-hover:text-Main-Wh">
+                            Networking Penetration
+                            Testing</h3>
+                        <p
+                            class="text-Bg-Light-grey text-lg font-normal leading-snug opacity-90 group-hover:opacity-100">
+                            Internal and external
+                            assessments exposing firewall bypasses, misconfigured services, lateral movement paths, and
+                            privilege escalation opportunities.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-Main-Bl rounded-3xl p-8 flex flex-col justify-between min-h-[300px] transition-all duration-300 group hover:-translate-y-2 hover:bg-[#0a0a0a] cursor-pointer">
+                    <img src="{% static 'icons/abstract-ico-1.svg' %}" alt=""
+                        class="w-[64px] h-[64px] object-contain transition-transform duration-300 group-hover:scale-110" />
+                    <div class="flex flex-col gap-4 mt-8">
+                        <h3 class="text-Bg-Light-grey text-[28px] font-semibold leading-tight group-hover:text-Main-Wh">
+                            Vulnerability Assessment
+                        </h3>
+                        <p
+                            class="text-Bg-Light-grey text-lg font-normal leading-snug opacity-90 group-hover:opacity-100">
+                            Execute comprehensive scanning
+                            and manual validation to identify exploitable weaknesses across networks and applications,
+                            prioritized by risk.</p>
+                    </div>
+                </div>
+                <div
+                    class="bg-Main-Bl rounded-3xl p-8 flex flex-col justify-between min-h-[300px] transition-all duration-300 group hover:-translate-y-2 hover:bg-[#0a0a0a] cursor-pointer">
+                    <img src="{% static 'icons/abstract-ico-4.svg' %}" alt=""
+                        class="w-[64px] h-[64px] object-contain transition-transform duration-300 group-hover:scale-110" />
+                    <div class="flex flex-col gap-4 mt-8">
+                        <h3 class="text-Bg-Light-grey text-[28px] font-semibold leading-tight group-hover:text-Main-Wh">
+                            Password Audit</h3>
+                        <p
+                            class="text-Bg-Light-grey text-lg font-normal leading-snug opacity-90 group-hover:opacity-100">
+                            Evaluate password
+                            policies and credential hygiene by identifying weak, reused, and non-compliant credentials
+                            that increase unauthorized access risk.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ════ METHODOLOGIES ════ -->
+    <section class="bg-Bg-Black py-28">
+        <div class="w-full max-w-[1240px] mx-auto px-5 flex flex-col md:flex-row gap-10 md:gap-20">
+            <div
+                class="text-white/40 text-xl md:text-2xl font-bold uppercase leading-6 shrink-0 md:pt-2 tracking-widest">
+                Methods</div>
+            <div class="flex flex-col gap-8 md:gap-10" style="max-width:820px">
+                <h2 class="text-Main-Wh text-4xl md:text-5xl font-bold leading-tight tracking-tight"
+                    style="max-width:620px;">
+                    Apply industry-standard frameworks rigorously. We never use templates.
+                </h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+                    <div class="flex flex-col gap-2">
+                        <span class="text-Main-Wh text-2xl font-bold">OWASP</span>
+                        <span class="text-white/40 text-base">Web &amp; API security</span>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <span class="text-Main-Wh text-2xl font-bold">PTES</span>
+                        <span class="text-white/40 text-base">Pen Test Execution Standard</span>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <span class="text-Main-Wh text-2xl font-bold">NIST</span>
+                        <span class="text-white/40 text-base">Risk management framework</span>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <span class="text-Main-Wh text-2xl font-bold">OSSTMM</span>
+                        <span class="text-white/40 text-base">Open source security testing</span>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <span class="text-Main-Wh text-2xl font-bold">MITRE ATT&CK</span>
+                        <span class="text-white/40 text-base">Adversary TTPs</span>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <span class="text-Main-Wh text-2xl font-bold">Cyber Essentials</span>
+                        <span class="text-white/40 text-base">UK security baseline</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════ CTA ════ -->
+    <section class="bg-Main-Bl py-32">
+        <div class="w-full max-w-[1240px] mx-auto px-5">
+            <div class="flex flex-col">
+                <h2
+                    class="text-Bg-Light-grey text-6xl sm:text-7xl md:text-[100px] lg:text-[140px] font-medium leading-[0.9] tracking-tight m-0 p-0">
+                    Ready to Test</h2>
+                <h2
+                    class="text-Bg-Light-grey text-6xl sm:text-7xl md:text-[100px] lg:text-[140px] font-medium leading-[0.9] tracking-tight lg:ml-[30%] m-0 p-0 mt-2 md:mt-4">
+                    Your Defenses?</h2>
+            </div>
+            <div class="lg:ml-[30%] mt-8 md:mt-12 flex flex-col gap-6 md:gap-8">
+                <p class="text-white/90 text-lg md:text-[22px] font-normal leading-relaxed" style="max-width:400px;">
+                    From your first Cyber Essentials certificate to a full penetration test, we'll scope it, deliver it,
+                    and give you results you can act on.
+                </p>
+                <a href="/contact"
+                    class="pl-6 pr-1 py-1 bg-Main-Wh rounded-full flex items-center gap-5 self-start transition-all duration-300 group hover:bg-Main-Bl"
+                    style="border: 2px solid white;">
+                    <span
+                        class="text-Main-Bl text-xl lg:text-2xl font-semibold group-hover:text-white transition-colors duration-300">Get
+                        in Touch</span>
+                    <span
+                        class="p-2 bg-Main-Bl rounded-full flex items-center justify-center group-hover:bg-white transition-colors duration-300">
+                        <img src="{% static 'icons/arrow-right-wh.svg' %}" alt=""
+                            class="w-[20px] h-[20px] lg:w-[24px] lg:h-[24px] object-contain group-hover:hidden" />
+                        <img src="{% static 'icons/arrow-right-bl.svg' %}" alt=""
+                            class="w-[20px] h-[20px] lg:w-[24px] lg:h-[24px] object-contain hidden group-hover:block" />
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    {% include 'partials/footer.html' %}
+
+</body>
+
+</html>

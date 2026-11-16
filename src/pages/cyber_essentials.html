@@ -1,0 +1,457 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyber Essentials &amp; Cyber Essentials Plus – NyxOps</title>
+    <meta name="description"
+        content="NyxOps are cyber security advisors who help organisations achieve and maintain Cyber Essentials and Cyber Essentials Plus certification: gap assessment, remediation support, submission and audit preparation." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/output.css' %}" />
+    <script src="{% static 'js/navbar.js' %}" defer></script>
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="NyxOps" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <style>
+        .faq summary {
+            list-style: none;
+            cursor: pointer;
+        }
+
+        .faq summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq .faq-icon {
+            transition: transform 0.3s;
+        }
+
+        .faq[open] .faq-icon {
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+
+<body class="bg-Bg-Light-grey font-sans antialiased">
+
+    <!-- ════ HERO / NAV ════ -->
+    <section class="bg-Main-Bl overflow-hidden relative">
+        <div class="w-full max-w-[1240px] mx-auto px-5 pt-5 relative z-20">
+            {% include 'partials/navbar.html' %}
+        </div>
+
+        <div class="w-full max-w-[1240px] mx-auto px-5 py-20 lg:py-28">
+            <p class="text-white/40 text-xl font-bold uppercase tracking-widest mb-6">Cyber Essentials</p>
+            <h1 class="text-Main-Wh text-5xl md:text-7xl font-bold leading-tight tracking-tight"
+                style="max-width:760px; line-height:1.05;">
+                Get certified.<br>Stay protected.
+            </h1>
+            <p class="text-white/60 text-xl md:text-2xl font-normal leading-relaxed mt-8" style="max-width:560px;">
+                We are cyber security advisors who take you from "where do we start?" to Cyber Essentials and Cyber
+                Essentials Plus, without the jargon or the guesswork.
+            </p>
+            <div class="flex flex-wrap gap-4 mt-10">
+                <a href="/contact?service=cyber_essentials"
+                    class="pl-6 pr-1 py-1 bg-Main-Wh rounded-full flex items-center gap-5 transition-all duration-300 group hover:bg-Main-Bl"
+                    style="border: 2px solid white;">
+                    <span
+                        class="text-Main-Bl text-xl font-semibold group-hover:text-white transition-colors duration-300">Book
+                        a free readiness call</span>
+                    <span
+                        class="p-2 bg-Main-Bl rounded-full flex items-center justify-center group-hover:bg-white transition-colors duration-300">
+                        <img src="{% static 'icons/arrow-right-wh.svg' %}" alt=""
+                            class="w-5 h-5 object-contain group-hover:hidden" />
+                        <img src="{% static 'icons/arrow-right-bl.svg' %}" alt=""
+                            class="w-5 h-5 object-contain hidden group-hover:block" />
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════ WHAT IS IT ════ -->
+    <section class="bg-Bg-Light-grey py-28">
+        <div class="w-full max-w-[1240px] mx-auto px-5 flex flex-col md:flex-row gap-10 md:gap-20">
+            <div
+                class="text-Main-Bl text-xl md:text-2xl font-bold uppercase leading-6 shrink-0 md:pt-2 tracking-widest md:w-[200px]">
+                What is it?</div>
+            <div class="flex flex-col gap-8" style="max-width:820px">
+                <p class="text-Main-Bl text-3xl md:text-4xl font-semibold leading-tight tracking-tight"
+                    style="opacity:0.92;">
+                    Cyber Essentials is the UK government-backed certification that proves your organisation has the
+                    core protections against the most common cyber attacks in place.
+                </p>
+                <p class="text-Main-Bl text-lg font-normal leading-relaxed" style="opacity:0.65; max-width:640px;">
+                    The scheme is overseen by the National Cyber Security Centre (NCSC) and delivered through IASME
+                    and its network of certification bodies. It is required for many UK public-sector contracts, is
+                    increasingly asked for by customers and insurers, and gives you a clear, practical security
+                    baseline to build on.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════ CE vs CE PLUS ════ -->
+    <section class="bg-Bg-Light-grey pb-28">
+        <div class="w-full max-w-[1240px] mx-auto px-5 flex flex-col gap-12">
+            <h2 class="text-Main-Bl text-5xl md:text-6xl font-bold leading-tight tracking-tight"
+                style="max-width:620px;">Two levels of certification</h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <!-- CE -->
+                <div class="bg-Main-Wh border rounded-3xl p-8 md:p-10 flex flex-col gap-6"
+                    style="border-color: rgba(50,146,255,0.15);">
+                    <span class="text-Main-Bl text-xs font-bold uppercase tracking-widest"
+                        style="opacity:0.5;">Level one</span>
+                    <h3 class="text-Main-Bl text-3xl md:text-4xl font-bold tracking-tight">Cyber Essentials</h3>
+                    <p class="text-Main-Bl text-lg leading-relaxed" style="opacity:0.7;">
+                        A verified self-assessment. You answer a set of questions about how your organisation meets
+                        the five technical controls, and an independent certification body reviews your answers.
+                    </p>
+                    <ul class="flex flex-col gap-3 text-Main-Bl text-base">
+                        <li class="flex gap-3"><span class="font-bold">✓</span>Self-assessment questionnaire, signed
+                            off by a senior person in your organisation</li>
+                        <li class="flex gap-3"><span class="font-bold">✓</span>Independently verified by a
+                            certification body</li>
+                        <li class="flex gap-3"><span class="font-bold">✓</span>Valid for 12 months, renewed annually
+                        </li>
+                    </ul>
+                    <div class="mt-auto pt-6 border-t" style="border-color: rgba(50,146,255,0.15);">
+                        <span class="text-Main-Bl text-sm font-bold uppercase tracking-widest"
+                            style="opacity:0.5;">How we help</span>
+                        <p class="text-Main-Bl text-base leading-relaxed mt-2" style="opacity:0.8;">Gap assessment,
+                            remediation plan, and support completing your submission accurately the first time.</p>
+                    </div>
+                </div>
+
+                <!-- CE Plus -->
+                <div class="bg-Main-Bl rounded-3xl p-8 md:p-10 flex flex-col gap-6">
+                    <span class="text-white/60 text-xs font-bold uppercase tracking-widest">Level two</span>
+                    <h3 class="text-Main-Wh text-3xl md:text-4xl font-bold tracking-tight">Cyber Essentials Plus</h3>
+                    <p class="text-white/80 text-lg leading-relaxed">
+                        The same five controls, independently tested. An assessor carries out a hands-on technical
+                        audit of a sample of your systems to confirm the controls actually work.
+                    </p>
+                    <ul class="flex flex-col gap-3 text-Main-Wh text-base">
+                        <li class="flex gap-3"><span class="font-bold">✓</span>Builds on a current Cyber Essentials
+                            certificate</li>
+                        <li class="flex gap-3"><span class="font-bold">✓</span>External and internal vulnerability
+                            scanning, device and account checks</li>
+                        <li class="flex gap-3"><span class="font-bold">✓</span>Tests that malware protection, patching
+                            and MFA are working in practice</li>
+                    </ul>
+                    <div class="mt-auto pt-6 border-t border-white/20">
+                        <span class="text-white/60 text-sm font-bold uppercase tracking-widest">How we help</span>
+                        <p class="text-Main-Wh text-base leading-relaxed mt-2">Pre-audit technical checks using our
+                            penetration testing expertise, so issues are found and fixed before the assessor arrives.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════ FIVE CONTROLS ════ -->
+    <section class="bg-Bg-Black py-28">
+        <div class="w-full max-w-[1240px] mx-auto px-5 flex flex-col md:flex-row gap-10 md:gap-20">
+            <div
+                class="text-white/40 text-xl md:text-2xl font-bold uppercase leading-6 shrink-0 md:pt-2 tracking-widest md:w-[200px]">
+                The Controls</div>
+            <div class="flex flex-col gap-10 w-full" style="max-width:820px">
+                <h2 class="text-Main-Wh text-4xl md:text-5xl font-bold leading-tight tracking-tight"
+                    style="max-width:640px;">
+                    Five controls that close the doors attackers use most.
+                </h2>
+                <div class="flex flex-col">
+                    <div class="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-8 py-6 border-b border-t border-white/10">
+                        <span class="text-Main-Bl text-3xl font-bold leading-none sm:w-12 shrink-0">01</span>
+                        <div class="flex flex-col gap-1">
+                            <h3 class="text-Main-Wh text-xl md:text-2xl font-bold">Firewalls</h3>
+                            <p class="text-white/50 text-base leading-relaxed">Boundary firewalls and internet
+                                gateways configured to block unauthorised access, on every device that connects to the
+                                internet, including home and remote workers.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-8 py-6 border-b border-white/10">
+                        <span class="text-Main-Bl text-3xl font-bold leading-none sm:w-12 shrink-0">02</span>
+                        <div class="flex flex-col gap-1">
+                            <h3 class="text-Main-Wh text-xl md:text-2xl font-bold">Secure Configuration</h3>
+                            <p class="text-white/50 text-base leading-relaxed">Default passwords changed, unnecessary
+                                software and accounts removed, and auto-run disabled, so devices are not left open by
+                                default.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-8 py-6 border-b border-white/10">
+                        <span class="text-Main-Bl text-3xl font-bold leading-none sm:w-12 shrink-0">03</span>
+                        <div class="flex flex-col gap-1">
+                            <h3 class="text-Main-Wh text-xl md:text-2xl font-bold">Security Update Management</h3>
+                            <p class="text-white/50 text-base leading-relaxed">Only supported, licensed software in
+                                use, with critical and high-risk security updates applied within 14 days of release.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-8 py-6 border-b border-white/10">
+                        <span class="text-Main-Bl text-3xl font-bold leading-none sm:w-12 shrink-0">04</span>
+                        <div class="flex flex-col gap-1">
+                            <h3 class="text-Main-Wh text-xl md:text-2xl font-bold">User Access Control</h3>
+                            <p class="text-white/50 text-base leading-relaxed">Accounts only for people who need them,
+                                separate administrator accounts, and multi-factor authentication on cloud services.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-8 py-6 border-b border-white/10">
+                        <span class="text-Main-Bl text-3xl font-bold leading-none sm:w-12 shrink-0">05</span>
+                        <div class="flex flex-col gap-1">
+                            <h3 class="text-Main-Wh text-xl md:text-2xl font-bold">Malware Protection</h3>
+                            <p class="text-white/50 text-base leading-relaxed">Anti-malware software or application
+                                allow-listing in place to stop malicious code from running on your devices.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════ PROCESS ════ -->
+    <section class="bg-Main-Bl py-28">
+        <div class="w-full max-w-[1240px] mx-auto px-5 flex flex-col gap-12 lg:gap-16">
+            <div class="flex flex-col gap-4">
+                <p class="text-white/40 text-xl font-bold uppercase tracking-widest">Our process</p>
+                <h2 class="text-Main-Wh text-5xl md:text-6xl font-bold leading-tight tracking-tight"
+                    style="max-width:620px;">How we get you certified</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div
+                    class="bg-white/10 rounded-3xl p-8 flex flex-col gap-5 transition-all duration-300 group hover:bg-white/15 hover:-translate-y-2">
+                    <div
+                        class="w-12 h-12 bg-Main-Wh rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                        <span class="text-Main-Bl text-2xl font-bold">01</span>
+                    </div>
+                    <h3 class="text-Main-Wh text-2xl font-bold">Readiness Call</h3>
+                    <p class="text-white/60 text-base leading-relaxed group-hover:text-white/80">A free call to
+                        understand your organisation, devices, cloud services and what you need certification for.
+                    </p>
+                </div>
+                <div
+                    class="bg-white/10 rounded-3xl p-8 flex flex-col gap-5 transition-all duration-300 group hover:bg-white/15 hover:-translate-y-2">
+                    <div
+                        class="w-12 h-12 bg-Main-Wh rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                        <span class="text-Main-Bl text-2xl font-bold">02</span>
+                    </div>
+                    <h3 class="text-Main-Wh text-2xl font-bold">Gap Assessment</h3>
+                    <p class="text-white/60 text-base leading-relaxed group-hover:text-white/80">We review your setup
+                        against the current Cyber Essentials requirements and give you a clear, prioritised list of
+                        what to fix.</p>
+                </div>
+                <div
+                    class="bg-white/10 rounded-3xl p-8 flex flex-col gap-5 transition-all duration-300 group hover:bg-white/15 hover:-translate-y-2">
+                    <div
+                        class="w-12 h-12 bg-Main-Wh rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                        <span class="text-Main-Bl text-2xl font-bold">03</span>
+                    </div>
+                    <h3 class="text-Main-Wh text-2xl font-bold">Remediation Support</h3>
+                    <p class="text-white/60 text-base leading-relaxed group-hover:text-white/80">Practical, hands-on
+                        guidance to close the gaps: configuration changes, patching, MFA rollout and access clean-up.
+                    </p>
+                </div>
+                <div
+                    class="bg-white/10 rounded-3xl p-8 flex flex-col gap-5 transition-all duration-300 group hover:bg-white/15 hover:-translate-y-2">
+                    <div
+                        class="w-12 h-12 bg-Main-Wh rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                        <span class="text-Main-Bl text-2xl font-bold">04</span>
+                    </div>
+                    <h3 class="text-Main-Wh text-2xl font-bold">Submission Support</h3>
+                    <p class="text-white/60 text-base leading-relaxed group-hover:text-white/80">We help you complete
+                        the self-assessment accurately and with confidence before it goes to your certification body.
+                    </p>
+                </div>
+                <div
+                    class="bg-white/10 rounded-3xl p-8 flex flex-col gap-5 transition-all duration-300 group hover:bg-white/15 hover:-translate-y-2">
+                    <div
+                        class="w-12 h-12 bg-Main-Wh rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                        <span class="text-Main-Bl text-2xl font-bold">05</span>
+                    </div>
+                    <h3 class="text-Main-Wh text-2xl font-bold">CE Plus Preparation</h3>
+                    <p class="text-white/60 text-base leading-relaxed group-hover:text-white/80">Going for Plus? We run
+                        pre-audit scans and device checks with the same tooling our penetration testers use.</p>
+                </div>
+                <div
+                    class="bg-white/10 rounded-3xl p-8 flex flex-col gap-5 transition-all duration-300 group hover:bg-white/15 hover:-translate-y-2">
+                    <div
+                        class="w-12 h-12 bg-Main-Wh rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                        <span class="text-Main-Bl text-2xl font-bold">06</span>
+                    </div>
+                    <h3 class="text-Main-Wh text-2xl font-bold">Ongoing Compliance</h3>
+                    <p class="text-white/60 text-base leading-relaxed group-hover:text-white/80">Renewal reminders,
+                        updates when the requirements change, and an advisor on hand all year, not just at audit time.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════ WHO NEEDS IT ════ -->
+    <section class="bg-Bg-Light-grey py-28">
+        <div class="w-full max-w-[1240px] mx-auto px-5 flex flex-col gap-12 lg:gap-16">
+            <div class="flex flex-col md:flex-row justify-between gap-8">
+                <h2 class="text-Main-Bl text-5xl md:text-6xl font-bold leading-tight tracking-tight"
+                    style="max-width:460px;">Who needs Cyber Essentials?</h2>
+                <p class="text-Main-Bl text-lg leading-relaxed self-end" style="max-width:380px; opacity:0.65;">Any
+                    organisation can certify, whatever its size or sector. These are the most common reasons our
+                    clients come to us.</p>
+            </div>
+            <div class="flex flex-col gap-0">
+                <div class="flex flex-col md:flex-row items-start gap-6 py-8 border-b"
+                    style="border-color: rgba(50,146,255,0.2);">
+                    <span class="text-Main-Bl text-7xl font-bold leading-none"
+                        style="opacity:0.15; min-width:80px;">01</span>
+                    <div class="flex flex-col gap-3">
+                        <h3 class="text-Main-Bl text-2xl font-bold">Public-Sector Suppliers</h3>
+                        <p class="text-Main-Bl text-base leading-relaxed" style="opacity:0.65;">Many UK government
+                            contracts, including those involving personal data or certain IT services, require Cyber
+                            Essentials as a minimum.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row items-start gap-6 py-8 border-b"
+                    style="border-color: rgba(50,146,255,0.2);">
+                    <span class="text-Main-Bl text-7xl font-bold leading-none"
+                        style="opacity:0.15; min-width:80px;">02</span>
+                    <div class="flex flex-col gap-3">
+                        <h3 class="text-Main-Bl text-2xl font-bold">Supply-Chain Partners</h3>
+                        <p class="text-Main-Bl text-base leading-relaxed" style="opacity:0.65;">Larger customers
+                            increasingly ask suppliers to prove a security baseline before they sign or renew.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row items-start gap-6 py-8 border-b"
+                    style="border-color: rgba(50,146,255,0.2);">
+                    <span class="text-Main-Bl text-7xl font-bold leading-none"
+                        style="opacity:0.15; min-width:80px;">03</span>
+                    <div class="flex flex-col gap-3">
+                        <h3 class="text-Main-Bl text-2xl font-bold">Insurance &amp; Due Diligence</h3>
+                        <p class="text-Main-Bl text-base leading-relaxed" style="opacity:0.65;">Certification is a
+                            recognised signal to insurers, investors and partners that you take security seriously.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row items-start gap-6 py-8">
+                    <span class="text-Main-Bl text-7xl font-bold leading-none"
+                        style="opacity:0.15; min-width:80px;">04</span>
+                    <div class="flex flex-col gap-3">
+                        <h3 class="text-Main-Bl text-2xl font-bold">Growing Businesses</h3>
+                        <p class="text-Main-Bl text-base leading-relaxed" style="opacity:0.65;">A practical, affordable
+                            first step for small and medium organisations that want real protection without an
+                            enterprise budget.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════ FAQ ════ -->
+    <section class="bg-Main-Wh py-28">
+        <div class="w-full max-w-[1240px] mx-auto px-5 flex flex-col md:flex-row gap-10 md:gap-20">
+            <div
+                class="text-Main-Bl text-xl md:text-2xl font-bold uppercase leading-6 shrink-0 md:pt-2 tracking-widest md:w-[200px]">
+                FAQ</div>
+            <div class="flex flex-col w-full" style="max-width:820px">
+                <details class="faq border-b border-t py-6" style="border-color: rgba(50,146,255,0.2);">
+                    <summary class="flex items-center justify-between gap-6">
+                        <span class="text-Main-Bl text-xl md:text-2xl font-bold">Do you issue the certificate?</span>
+                        <span class="faq-icon text-Main-Bl text-3xl font-light leading-none">+</span>
+                    </summary>
+                    <p class="text-Main-Bl text-base leading-relaxed mt-4" style="opacity:0.7;">Certificates are
+                        issued by IASME-licensed certification bodies. NyxOps acts as your advisor: we prepare you,
+                        support you through the submission, and help you get ready for the CE Plus audit, so the
+                        assessment itself is a formality.</p>
+                </details>
+                <details class="faq border-b py-6" style="border-color: rgba(50,146,255,0.2);">
+                    <summary class="flex items-center justify-between gap-6">
+                        <span class="text-Main-Bl text-xl md:text-2xl font-bold">How long does it take?</span>
+                        <span class="faq-icon text-Main-Bl text-3xl font-light leading-none">+</span>
+                    </summary>
+                    <p class="text-Main-Bl text-base leading-relaxed mt-4" style="opacity:0.7;">It depends on how many
+                        gaps need closing. Many small organisations are ready to submit within a few weeks. After our
+                        gap assessment we will give you a realistic timeline.</p>
+                </details>
+                <details class="faq border-b py-6" style="border-color: rgba(50,146,255,0.2);">
+                    <summary class="flex items-center justify-between gap-6">
+                        <span class="text-Main-Bl text-xl md:text-2xl font-bold">Are cloud services and remote workers
+                            in scope?</span>
+                        <span class="faq-icon text-Main-Bl text-3xl font-light leading-none">+</span>
+                    </summary>
+                    <p class="text-Main-Bl text-base leading-relaxed mt-4" style="opacity:0.7;">Yes. Cloud services
+                        such as Microsoft 365 or Google Workspace, and devices used by home and remote workers to
+                        access organisational data, are generally in scope. We help you define the scope correctly
+                        from the start.</p>
+                </details>
+                <details class="faq border-b py-6" style="border-color: rgba(50,146,255,0.2);">
+                    <summary class="flex items-center justify-between gap-6">
+                        <span class="text-Main-Bl text-xl md:text-2xl font-bold">How long does certification
+                            last?</span>
+                        <span class="faq-icon text-Main-Bl text-3xl font-light leading-none">+</span>
+                    </summary>
+                    <p class="text-Main-Bl text-base leading-relaxed mt-4" style="opacity:0.7;">Certificates are
+                        valid for 12 months. Our ongoing advisory service keeps you compliant in between, so renewal
+                        is straightforward.</p>
+                </details>
+                <details class="faq border-b py-6" style="border-color: rgba(50,146,255,0.2);">
+                    <summary class="flex items-center justify-between gap-6">
+                        <span class="text-Main-Bl text-xl md:text-2xl font-bold">Why choose an offensive security
+                            team as advisors?</span>
+                        <span class="faq-icon text-Main-Bl text-3xl font-light leading-none">+</span>
+                    </summary>
+                    <p class="text-Main-Bl text-base leading-relaxed mt-4" style="opacity:0.7;">Because we know how
+                        attackers get in. We do not just help you tick boxes: we check that your controls actually
+                        hold up. When you are ready to go further, our <a href="/services"
+                            class="underline underline-offset-2 font-semibold">penetration testing services</a> are
+                        already on hand.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════ CTA ════ -->
+    <section class="bg-Main-Bl py-32">
+        <div class="w-full max-w-[1240px] mx-auto px-5">
+            <div class="flex flex-col">
+                <h2
+                    class="text-Bg-Light-grey text-6xl sm:text-7xl md:text-[100px] lg:text-[140px] font-medium leading-[0.9] tracking-tight m-0 p-0">
+                    Ready to Get</h2>
+                <h2
+                    class="text-Bg-Light-grey text-6xl sm:text-7xl md:text-[100px] lg:text-[140px] font-medium leading-[0.9] tracking-tight lg:ml-[30%] m-0 p-0 mt-2 md:mt-4">
+                    Certified?</h2>
+            </div>
+            <div class="lg:ml-[30%] mt-8 md:mt-12 flex flex-col gap-6 md:gap-8">
+                <p class="text-white/90 text-lg md:text-[22px] font-normal leading-relaxed" style="max-width:420px;">
+                    Book a free readiness call and find out exactly what stands between you and your certificate.
+                </p>
+                <a href="/contact?service=cyber_essentials"
+                    class="pl-6 pr-1 py-1 bg-Main-Wh rounded-full flex items-center gap-5 self-start transition-all duration-300 group hover:bg-Main-Bl"
+                    style="border: 2px solid white;">
+                    <span
+                        class="text-Main-Bl text-xl lg:text-2xl font-semibold group-hover:text-white transition-colors duration-300">Get
+                        Started</span>
+                    <span
+                        class="p-2 bg-Main-Bl rounded-full flex items-center justify-center group-hover:bg-white transition-colors duration-300">
+                        <img src="{% static 'icons/arrow-right-wh.svg' %}" alt=""
+                            class="w-[20px] h-[20px] lg:w-[24px] lg:h-[24px] object-contain group-hover:hidden" />
+                        <img src="{% static 'icons/arrow-right-bl.svg' %}" alt=""
+                            class="w-[20px] h-[20px] lg:w-[24px] lg:h-[24px] object-contain hidden group-hover:block transition-transform duration-300 group-hover:translate-x-1" />
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    {% include 'partials/footer.html' %}
+
+</body>
+
+</html>
