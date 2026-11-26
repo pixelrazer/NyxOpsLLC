@@ -12,5 +12,5 @@
  */
 window.NYXOPS_CONFIG = {
     formEndpoint: '',
-    email: 'csectld@proton.me',
+    email: 'nyxops.security@gmail.com',
 };

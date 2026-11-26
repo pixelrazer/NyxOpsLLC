@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>US Security Testing &amp; Compliance Support – NyxOps</title>
+    <meta name="description"
+        content="NyxOps provides penetration testing, vulnerability assessments and gap assessments for US businesses working with the FTC Safeguards Rule, DFARS and NIST SP 800-171, or the HIPAA Security Rule." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/output.css" />
+    <script src="../static/js/navbar.js" defer></script>
+    <link rel="icon" type="image/png" href="../favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../favicon/favicon.svg" />
+    <link rel="shortcut icon" href="../favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="NyxOps" />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
+    <style>
+        .faq summary {
+            list-style: none;
+            cursor: pointer;
+        }
+
+        .faq summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq .faq-icon {
+            transition: transform 0.3s;
+        }
+
+        .faq[open] .faq-icon {
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+
+<body class="bg-Bg-Light-grey font-sans antialiased">
+
+    <!-- ════ HERO / NAV ════ -->
+    <section class="bg-Main-Bl overflow-hidden relative">
+        <div class="w-full max-w-[1240px] mx-auto px-5 pt-5 relative z-20">
+            <!-- NyxOps Shared Navbar Partial -->
+<nav class="bg-Main-Wh rounded-[5px] px-5 py-3.5 flex items-center justify-between relative">
+    <a href="../" class="text-Main-Bl text-xl md:text-2xl font-semibold uppercase leading-5">nyxops</a>
+    <div class="hidden lg:flex items-center gap-8 xl:gap-12">
+        <a href="../"
+            class="text-Main-Bl text-lg xl:text-xl font-medium leading-6 hover:opacity-70 transition-all duration-300">Home</a>
+        <a href="../services/"
+            class="text-Main-Bl text-lg xl:text-xl font-medium leading-6 hover:opacity-70 transition-all duration-300">Services</a>
+        <a href="../cyber-essentials/"
+            class="text-Main-Bl text-lg xl:text-xl font-medium leading-6 hover:opacity-70 transition-all duration-300">Cyber Essentials</a>
+        <a href="../us/"
+            class="text-Main-Bl text-lg xl:text-xl font-medium leading-6 hover:opacity-70 transition-all duration-300">USA</a>
+
+        <!-- Company dropdown -->
+        <div data-dropdown style="position:relative;">
+            <div class="text-Main-Bl text-lg xl:text-xl font-medium leading-6 flex items-center gap-[5px] cursor-pointer"
+                style="padding: 4px 0; transition: opacity 0.3s;">
+                Company
+                <img src="../static/icons/dropdown-arrow.svg" alt="" class="nav-arrow"
+                    style="width: 8px; height: 8px; object-fit: contain; transition: transform 0.3s;" />
+            </div>
+            <div class="nav-dropdown"
+                style="position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(8px); margin-top: 4px; width: 210px; background: #fff; border-radius: 14px; box-shadow: 0 10px 40px rgba(0,31,63,0.13); opacity: 0; visibility: hidden; transition: all 0.3s ease; display: flex; flex-direction: column; overflow: hidden; border: 1px solid rgba(0,31,63,0.06); z-index: 50; padding: 6px;">
+                <a href="../about/"
+                    style="padding: 10px 18px; color: #001f3f; font-weight: 500; font-size: 15px; text-decoration: none; border-radius: 10px; transition: all 0.2s; display: block;">About
+                    us</a>
+                <a href="../careers/"
+                    style="padding: 10px 18px; color: #001f3f; font-weight: 500; font-size: 15px; text-decoration: none; border-radius: 10px; transition: all 0.2s; display: block;">Careers</a>
+                <a href="../blog/"
+                    style="padding: 10px 18px; color: #001f3f; font-weight: 500; font-size: 15px; text-decoration: none; border-radius: 10px; transition: all 0.2s; display: block;">Blog</a>
+            </div>
+        </div>
+
+        <a href="../resources/"
+            class="text-Main-Bl text-lg xl:text-xl font-medium leading-6 hover:opacity-70 transition-all duration-300">Resources</a>
+
+        <!-- Contact dropdown -->
+        <div data-dropdown style="position:relative;">
+            <div class="text-Main-Bl text-lg xl:text-xl font-medium leading-6 flex items-center gap-[5px] cursor-pointer"
+                style="padding: 4px 0; transition: opacity 0.3s;">
+                Contact
+                <img src="../static/icons/dropdown-arrow.svg" alt="" class="nav-arrow"
+                    style="width: 8px; height: 8px; object-fit: contain; transition: transform 0.3s;" />
+            </div>
+            <div class="nav-dropdown"
+                style="position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(8px); margin-top: 4px; width: 180px; background: #fff; border-radius: 14px; box-shadow: 0 10px 40px rgba(0,31,63,0.13); opacity: 0; visibility: hidden; transition: all 0.3s ease; display: flex; flex-direction: column; overflow: hidden; border: 1px solid rgba(0,31,63,0.06); z-index: 50; padding: 6px;">
+                <a href="../contact/"
+                    style="padding: 10px 18px; color: #001f3f; font-weight: 500; font-size: 15px; text-decoration: none; border-radius: 10px; transition: all 0.2s; display: block;">Reach
+                    Out</a>
+                <a href="../intake/"
+                    style="padding: 10px 18px; color: #001f3f; font-weight: 500; font-size: 15px; text-decoration: none; border-radius: 10px; transition: all 0.2s; display: block;">Pentest
+                    Intake</a>
+            </div>
+        </div>
+    </div>
+    <button type="button" aria-label="Open menu" aria-controls="mobile-menu" class="lg:hidden flex items-center text-Main-Bl cursor-pointer" id="mobile-menu-btn">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path id="mobile-menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+    </button>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu"
+        class="hidden absolute bg-Main-Wh rounded-[10px] shadow-xl border border-gray-100 p-5 flex-col gap-4 z-50 lg:hidden"
+        style="top: 100%; right: 0; min-width: 240px; margin-top: 8px;">
+        <a href="../" class="text-Main-Bl text-lg font-medium">Home</a>
+        <a href="../services/" class="text-Main-Bl text-lg font-medium">Services</a>
+        <a href="../cyber-essentials/" class="text-Main-Bl text-lg font-medium">Cyber Essentials</a>
+        <a href="../us/" class="text-Main-Bl text-lg font-medium">USA</a>
+
+        <div class="flex flex-col gap-2 pt-4 border-t border-gray-100">
+            <div class="text-Main-Bl/60 text-sm font-semibold uppercase tracking-widest">Company</div>
+            <a href="../about/" class="text-Main-Bl text-lg font-medium pl-2">About us</a>
+            <a href="../careers/" class="text-Main-Bl text-lg font-medium pl-2">Careers</a>
+            <a href="../blog/" class="text-Main-Bl text-lg font-medium pl-2">Blog</a>
+        </div>
+
+        <div class="flex flex-col gap-2 pt-4 border-t border-gray-100">
+            <a href="../resources/" class="text-Main-Bl text-lg font-medium">Resources</a>
+        </div>
+
+        <div class="flex flex-col gap-2 pt-4 border-t border-gray-100">
+            <div class="text-Main-Bl/60 text-sm font-semibold uppercase tracking-widest">Contact</div>
+            <a href="../contact/" class="text-Main-Bl text-lg font-medium pl-2">Reach Out</a>
+            <a href="../intake/" class="text-Main-Bl text-lg font-medium pl-2">Pentest Intake</a>
+        </div>
+    </div>
+</nav>
+        </div>
+
+        <div class="w-full max-w-[1240px] mx-auto px-5 py-20 lg:py-28">
+            <p class="text-white/40 text-xl font-bold uppercase tracking-widest mb-6">United States</p>
+            <h1 class="text-Main-Wh text-5xl md:text-7xl font-bold leading-tight tracking-tight"
+                style="max-width:760px; line-height:1.05;">
+                Security testing<br>for US requirements.
+            </h1>
+            <p class="text-white/60 text-xl md:text-2xl font-normal leading-relaxed mt-8" style="max-width:560px;">
+                Penetration testing, vulnerability assessments and gap assessments for US businesses working with
+                the FTC Safeguards Rule, DFARS and NIST SP 800-171, or HIPAA, explained in plain English.
+            </p>
+            <div class="flex flex-wrap gap-4 mt-10">
+                <a href="../contact/?service=us_testing"
+                    class="pl-6 pr-1 py-1 bg-Main-Wh rounded-full flex items-center gap-5 transition-all duration-300 group hover:bg-Main-Bl"
+                    style="border: 2px solid white;">
+                    <span
+                        class="text-Main-Bl text-xl font-semibold group-hover:text-white transition-colors duration-300">Book
+                        a free scoping call</span>
+                    <span
+                        class="p-2 bg-Main-Bl rounded-full flex items-center justify-center group-hover:bg-white transition-colors duration-300">
+                        <img src="../static/icons/arrow-right-wh.svg" alt=""
+                            class="w-5 h-5 object-contain group-hover:hidden" />
+                        <img src="../static/icons/arrow-right-bl.svg" alt=""
+                            class="w-5 h-5 object-contain hidden group-hover:block" />
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════ WHAT WE DO ════ -->
+    <section class="bg-Bg-Light-grey py-28">
+        <div class="w-full max-w-[1240px] mx-auto px-5 flex flex-col md:flex-row gap-10 md:gap-20">
+            <div
+                class="text-Main-Bl text-xl md:text-2xl font-bold uppercase leading-6 shrink-0 md:pt-2 tracking-widest md:w-[200px]">
+                What we do</div>
+            <div class="flex flex-col gap-8" style="max-width:820px">
+                <p class="text-Main-Bl text-3xl md:text-4xl font-semibold leading-tight tracking-tight"
+                    style="opacity:0.92;">
+                    We help small and mid-sized US businesses test their defenses and document where they stand
+                    against the rules their regulators, customers and contracts point to.
+                </p>
+                <p class="text-Main-Bl text-lg font-normal leading-relaxed" style="opacity:0.65; max-width:640px;">
+                    We are an independent offensive security team. We do not issue certifications or sell
+                    compliance badges. We give you real testing, an honest report, and a clear list of what to fix.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════ REQUIREMENTS ════ -->
+    <section class="bg-Bg-Light-grey pb-28">
+        <div class="w-full max-w-[1240px] mx-auto px-5 flex flex-col gap-12">
+            <h2 class="text-Main-Bl text-5xl md:text-6xl font-bold leading-tight tracking-tight"
+                style="max-width:620px;">Who we work with</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-Main-Wh border rounded-3xl p-8 md:p-10 flex flex-col gap-6"
+                    style="border-color: rgba(50,146,255,0.15);">
+                    <span class="text-Main-Bl text-xs font-bold uppercase tracking-widest"
+                        style="opacity:0.5;">Financial services</span>
+                    <h3 class="text-Main-Bl text-3xl md:text-4xl font-bold tracking-tight">FTC Safeguards Rule</h3>
+                    <p class="text-Main-Bl text-lg leading-relaxed" style="opacity:0.7;">Covers non-bank financial institutions such as tax preparers, mortgage brokers, auto dealers that finance or lease, and collection agencies.</p>
+                    <ul class="flex flex-col gap-3 text-Main-Bl text-base">
+                        <li class="flex gap-3"><span class="font-bold">✓</span>Unless you run continuous monitoring, an annual penetration test and vulnerability assessments at least every six months (16 CFR 314.4(d)(2))</li>
+                        <li class="flex gap-3"><span class="font-bold">✓</span>Firms that hold information on fewer than 5,000 consumers are exempt from this testing requirement</li>
+                        <li class="flex gap-3"><span class="font-bold">✓</span>A written information security program and a qualified individual to oversee it</li>
+                    </ul>
+                    <div class="mt-auto pt-6 border-t" style="border-color: rgba(50,146,255,0.15);">
+                        <span class="text-Main-Bl text-sm font-bold uppercase tracking-widest"
+                            style="opacity:0.5;">How we help</span>
+                        <p class="text-Main-Bl text-base leading-relaxed mt-2" style="opacity:0.8;">An external penetration test plus vulnerability assessments, with a plain-English report you can keep on file.</p>
+                    </div>
+                </div>
+
+                <div class="bg-Main-Bl rounded-3xl p-8 md:p-10 flex flex-col gap-6">
+                    <span class="text-white/60 text-xs font-bold uppercase tracking-widest">Defense contractors</span>
+                    <h3 class="text-Main-Wh text-3xl md:text-4xl font-bold tracking-tight">DFARS &amp; NIST SP 800-171</h3>
+                    <p class="text-white/80 text-lg leading-relaxed">DoD contracts that involve Controlled Unclassified Information (CUI) carry DFARS 252.204-7012, which requires the security requirements in NIST SP 800-171.</p>
+                    <ul class="flex flex-col gap-3 text-Main-Wh text-base">
+                        <li class="flex gap-3"><span class="font-bold">✓</span>A System Security Plan describing how you meet each requirement</li>
+                        <li class="flex gap-3"><span class="font-bold">✓</span>A current self-assessment score posted in SPRS (DFARS 252.204-7019)</li>
+                        <li class="flex gap-3"><span class="font-bold">✓</span>CMMC certification assessments are carried out only by authorized C3PAOs. NyxOps is not a C3PAO</li>
+                    </ul>
+                    <div class="mt-auto pt-6 border-t border-white/20">
+                        <span class="text-white/60 text-sm font-bold uppercase tracking-widest">How we help</span>
+                        <p class="text-Main-Wh text-base leading-relaxed mt-2">A gap assessment against NIST SP 800-171 with a prioritized fix list, to support your self-assessment and System Security Plan.</p>
+                    </div>
+                </div>
+
+                <div class="bg-Main-Wh border rounded-3xl p-8 md:p-10 flex flex-col gap-6"
+                    style="border-color: rgba(50,146,255,0.15);">
+                    <span class="text-Main-Bl text-xs font-bold uppercase tracking-widest"
+                        style="opacity:0.5;">Healthcare</span>
+                    <h3 class="text-Main-Bl text-3xl md:text-4xl font-bold tracking-tight">HIPAA Security Rule</h3>
+                    <p class="text-Main-Bl text-lg leading-relaxed" style="opacity:0.7;">Dental offices, optometrists, clinics and other covered entities and business associates that handle electronic protected health information.</p>
+                    <ul class="flex flex-col gap-3 text-Main-Bl text-base">
+                        <li class="flex gap-3"><span class="font-bold">✓</span>An accurate and thorough security risk analysis (45 CFR 164.308(a)(1))</li>
+                        <li class="flex gap-3"><span class="font-bold">✓</span>Security measures that reduce the risks found to a reasonable level</li>
+                        <li class="flex gap-3"><span class="font-bold">✓</span>There is no official HIPAA certification: anyone offering one is selling a marketing badge</li>
+                    </ul>
+                    <div class="mt-auto pt-6 border-t" style="border-color: rgba(50,146,255,0.15);">
+                        <span class="text-Main-Bl text-sm font-bold uppercase tracking-widest"
+                            style="opacity:0.5;">How we help</span>
+                        <p class="text-Main-Bl text-base leading-relaxed mt-2" style="opacity:0.8;">A security risk analysis and an external penetration test, with findings and a prioritized remediation plan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════ PROCESS ════ -->
+    <section class="bg-Main-Bl py-28">
+        <div class="w-full max-w-[1240px] mx-auto px-5 flex flex-col gap-12 lg:gap-16">
+            <div class="flex flex-col gap-4">
+                <p class="text-white/40 text-xl font-bold uppercase tracking-widest">Our process</p>
+                <h2 class="text-Main-Wh text-5xl md:text-6xl font-bold leading-tight tracking-tight"
+                    style="max-width:620px;">How an engagement works</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div
+                    class="bg-white/10 rounded-3xl p-8 flex flex-col gap-5 transition-all duration-300 group hover:bg-white/15 hover:-translate-y-2">
+                    <div
+                        class="w-12 h-12 bg-Main-Wh rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                        <span class="text-Main-Bl text-2xl font-bold">01</span>
+                    </div>
+                    <h3 class="text-Main-Wh text-2xl font-bold">Scoping Call</h3>
+                    <p class="text-white/60 text-base leading-relaxed group-hover:text-white/80">A free call to understand your business, your systems, and which requirement is driving the work.</p>
+                </div>
+                <div
+                    class="bg-white/10 rounded-3xl p-8 flex flex-col gap-5 transition-all duration-300 group hover:bg-white/15 hover:-translate-y-2">
+                    <div
+                        class="w-12 h-12 bg-Main-Wh rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                        <span class="text-Main-Bl text-2xl font-bold">02</span>
+                    </div>
+                    <h3 class="text-Main-Wh text-2xl font-bold">Written Authorization</h3>
+                    <p class="text-white/60 text-base leading-relaxed group-hover:text-white/80">Nothing is tested until the owner of every system in scope signs an authorization form listing exactly what we may test and when.</p>
+                </div>
+                <div
+                    class="bg-white/10 rounded-3xl p-8 flex flex-col gap-5 transition-all duration-300 group hover:bg-white/15 hover:-translate-y-2">
+                    <div
+                        class="w-12 h-12 bg-Main-Wh rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                        <span class="text-Main-Bl text-2xl font-bold">03</span>
+                    </div>
+                    <h3 class="text-Main-Wh text-2xl font-bold">Testing &amp; Assessment</h3>
+                    <p class="text-white/60 text-base leading-relaxed group-hover:text-white/80">External penetration testing, vulnerability scanning with manual validation, or a gap assessment against the controls.</p>
+                </div>
+                <div
+                    class="bg-white/10 rounded-3xl p-8 flex flex-col gap-5 transition-all duration-300 group hover:bg-white/15 hover:-translate-y-2">
+                    <div
+                        class="w-12 h-12 bg-Main-Wh rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                        <span class="text-Main-Bl text-2xl font-bold">04</span>
+                    </div>
+                    <h3 class="text-Main-Wh text-2xl font-bold">Plain-English Report</h3>
+                    <p class="text-white/60 text-base leading-relaxed group-hover:text-white/80">What we found, how serious it is, and what to fix first, written for owners and managers as well as IT.</p>
+                </div>
+                <div
+                    class="bg-white/10 rounded-3xl p-8 flex flex-col gap-5 transition-all duration-300 group hover:bg-white/15 hover:-translate-y-2">
+                    <div
+                        class="w-12 h-12 bg-Main-Wh rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                        <span class="text-Main-Bl text-2xl font-bold">05</span>
+                    </div>
+                    <h3 class="text-Main-Wh text-2xl font-bold">Fix Support</h3>
+                    <p class="text-white/60 text-base leading-relaxed group-hover:text-white/80">Practical guidance while you close the gaps, and answers when your auditor, insurer or customer asks questions.</p>
+                </div>
+                <div
+                    class="bg-white/10 rounded-3xl p-8 flex flex-col gap-5 transition-all duration-300 group hover:bg-white/15 hover:-translate-y-2">
+                    <div
+                        class="w-12 h-12 bg-Main-Wh rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                        <span class="text-Main-Bl text-2xl font-bold">06</span>
+                    </div>
+                    <h3 class="text-Main-Wh text-2xl font-bold">Re-test</h3>
+                    <p class="text-white/60 text-base leading-relaxed group-hover:text-white/80">A free re-test of critical findings after you fix them, so you have evidence the issues are closed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════ FAQ ════ -->
+    <section class="bg-Main-Wh py-28">
+        <div class="w-full max-w-[1240px] mx-auto px-5 flex flex-col md:flex-row gap-10 md:gap-20">
+            <div
+                class="text-Main-Bl text-xl md:text-2xl font-bold uppercase leading-6 shrink-0 md:pt-2 tracking-widest md:w-[200px]">
+                FAQ</div>
+            <div class="flex flex-col w-full" style="max-width:820px">
+                <details class="faq border-b border-t py-6" style="border-color: rgba(50,146,255,0.2);">
+                    <summary class="flex items-center justify-between gap-6">
+                        <span class="text-Main-Bl text-xl md:text-2xl font-bold">Do you certify us or make us compliant?</span>
+                        <span class="faq-icon text-Main-Bl text-3xl font-light leading-none">+</span>
+                    </summary>
+                    <p class="text-Main-Bl text-base leading-relaxed mt-4" style="opacity:0.7;">No. We test and assess, and give you the evidence and the fix list. Whether you meet a rule is a judgment for you, your counsel and, where one exists, your official assessor. For CMMC that is an authorized C3PAO; NyxOps is not one.</p>
+                </details>
+                <details class="faq border-b py-6" style="border-color: rgba(50,146,255,0.2);">
+                    <summary class="flex items-center justify-between gap-6">
+                        <span class="text-Main-Bl text-xl md:text-2xl font-bold">Do we even need a penetration test?</span>
+                        <span class="faq-icon text-Main-Bl text-3xl font-light leading-none">+</span>
+                    </summary>
+                    <p class="text-Main-Bl text-base leading-relaxed mt-4" style="opacity:0.7;">It depends on the rule and your situation. Under the FTC Safeguards Rule, for example, firms with information on fewer than 5,000 consumers are exempt from the testing requirement, and continuous monitoring is an alternative. We will tell you honestly on the scoping call if we think you do not need us.</p>
+                </details>
+                <details class="faq border-b py-6" style="border-color: rgba(50,146,255,0.2);">
+                    <summary class="flex items-center justify-between gap-6">
+                        <span class="text-Main-Bl text-xl md:text-2xl font-bold">What about CMMC deadlines?</span>
+                        <span class="faq-icon text-Main-Bl text-3xl font-light leading-none">+</span>
+                    </summary>
+                    <p class="text-Main-Bl text-base leading-relaxed mt-4" style="opacity:0.7;">CMMC timelines have changed more than once. Whatever the current schedule, DFARS 252.204-7012 and the SPRS self-assessment already apply to contracts that involve CUI, and a gap assessment against NIST SP 800-171 is the starting point for both.</p>
+                </details>
+                <details class="faq border-b py-6" style="border-color: rgba(50,146,255,0.2);">
+                    <summary class="flex items-center justify-between gap-6">
+                        <span class="text-Main-Bl text-xl md:text-2xl font-bold">Will testing disrupt our business?</span>
+                        <span class="faq-icon text-Main-Bl text-3xl font-light leading-none">+</span>
+                    </summary>
+                    <p class="text-Main-Bl text-base leading-relaxed mt-4" style="opacity:0.7;">External testing is planned around your hours, limited to the systems you list on the authorization form, and stopped immediately if anything looks like it could affect service. Denial-of-service and social engineering are never included unless you ask for them in writing.</p>
+                </details>
+                <details class="faq border-b py-6" style="border-color: rgba(50,146,255,0.2);">
+                    <summary class="flex items-center justify-between gap-6">
+                        <span class="text-Main-Bl text-xl md:text-2xl font-bold">Is this legal advice?</span>
+                        <span class="faq-icon text-Main-Bl text-3xl font-light leading-none">+</span>
+                    </summary>
+                    <p class="text-Main-Bl text-base leading-relaxed mt-4" style="opacity:0.7;">No. This page is general information about common requirements, not legal advice. Check with your counsel or compliance lead which rules apply to you.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════ CTA ════ -->
+    <section class="bg-Main-Bl py-32">
+        <div class="w-full max-w-[1240px] mx-auto px-5">
+            <div class="flex flex-col">
+                <h2
+                    class="text-Bg-Light-grey text-6xl sm:text-7xl md:text-[100px] lg:text-[140px] font-medium leading-[0.9] tracking-tight m-0 p-0">
+                    Know Where</h2>
+                <h2
+                    class="text-Bg-Light-grey text-6xl sm:text-7xl md:text-[100px] lg:text-[140px] font-medium leading-[0.9] tracking-tight lg:ml-[30%] m-0 p-0 mt-2 md:mt-4">
+                    You Stand.</h2>
+            </div>
+            <div class="lg:ml-[30%] mt-8 md:mt-12 flex flex-col gap-6 md:gap-8">
+                <p class="text-white/90 text-lg md:text-[22px] font-normal leading-relaxed" style="max-width:420px;">
+                    Book a free scoping call and we will tell you honestly what testing you need, if any.
+                </p>
+                <a href="../contact/?service=us_testing"
+                    class="pl-6 pr-1 py-1 bg-Main-Wh rounded-full flex items-center gap-5 self-start transition-all duration-300 group hover:bg-Main-Bl"
+                    style="border: 2px solid white;">
+                    <span
+                        class="text-Main-Bl text-xl lg:text-2xl font-semibold group-hover:text-white transition-colors duration-300">Get
+                        Started</span>
+                    <span
+                        class="p-2 bg-Main-Bl rounded-full flex items-center justify-center group-hover:bg-white transition-colors duration-300">
+                        <img src="../static/icons/arrow-right-wh.svg" alt=""
+                            class="w-[20px] h-[20px] lg:w-[24px] lg:h-[24px] object-contain group-hover:hidden" />
+                        <img src="../static/icons/arrow-right-bl.svg" alt=""
+                            class="w-[20px] h-[20px] lg:w-[24px] lg:h-[24px] object-contain hidden group-hover:block transition-transform duration-300 group-hover:translate-x-1" />
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+        <!-- ════════════════════════════════════════════
+         FOOTER
+         ════════════════════════════════════════════ -->
+    <footer class="bg-Main-Bl border-t border-white/20">
+        <div
+            class="w-full max-w-[1240px] mx-auto px-5 py-8 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+            <span class="text-white/60 text-sm font-normal">© 2026 NyxOps. All rights reserved.</span>
+            <div class="flex flex-wrap items-center justify-center md:justify-end gap-4 md:gap-8">
+                <a href="../privacy-policy/" class="text-Main-Wh text-sm font-normal hover:underline">Privacy Policy</a>
+                <a href="../terms-of-service/" class="text-Main-Wh text-sm font-normal hover:underline">Terms of
+                    Service</a>
+                <a href="../responsible-disclosure/" class="text-Main-Wh text-sm font-normal hover:underline">Responsible
+                    Disclosure</a>
+                <a href="../data-protection/" class="text-Main-Wh text-sm font-normal hover:underline">Data Protection</a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

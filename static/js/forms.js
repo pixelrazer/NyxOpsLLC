@@ -19,7 +19,7 @@
     };
 
     function config() {
-        return window.NYXOPS_CONFIG || { formEndpoint: '', email: 'csectld@proton.me' };
+        return window.NYXOPS_CONFIG || { formEndpoint: '', email: 'nyxops.security@gmail.com' };
     }
 
     function toText(data) {
